@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+
+@font-face {
+  font-family: "fedra-sans";
+  src: url("fedra-sans-book_nANwg/Fedra\ Sans\ Book/");
+}
+body{
+  font-family: "fedra-sans";
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+  padding: 0;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  /* top: 88%; */
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav,
+.nav-item {
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-nav,
+.nav-link {
+  color: #3a833d;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 70px;
+}
+.navbar-nav,
+.nav-link:hover {
+  color: #3a833d;
+  font-size: 16px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #3a833d;
+}
+
+.faq-heading {
+  padding-top: 3%;
+  padding-bottom: 0%;
+  background: #02a647;
+  border-radius: 0px 0px 30px 30px;
+  color: #fff;
+  position: relative;
+}
+
+.heading1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  font-family: "poppins";
+  color: #03A245;
+}
+
+.heading {
+  padding: 10px 60px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  font-family: "poppins";
+}
+
+.heading::after {
+  position: absolute;
+  content: "";
+  top: 61px;
+  left: 35px;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: 2px;
+  background: #fff;
+}
+
+.faq-main {
+  padding: 2px;
+}
+
+.Contact {
+  background: #3a8339;
+  border-radius: 60px;
+  color: #fff;
+  border: 2px solid #ffff00;
+  padding: 10px;
+}
+
+.contact-link {
+  color: #fff;
+}
+.contact-link:hover {
+  color: #fff;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ff008b;
+} */
+/* section {
+  padding: 60px;
+} */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.faq {
+  /* padding: 120px 0 90px;
+  background: #f7fbff; */
+  min-height: 100%;
+}
+
+.faq .section-title {
+  margin-bottom: 54px;
+}
+
+.faq .section-title h2 {
+  margin-bottom: 22px;
+}
+
+.faq .accordion .card {
+  border: none;
+  margin-bottom: 15px;
+}
+
+.faq .accordion .card:not(:first-of-type) .card-header:first-child {
+  border-radius: 10px;
+}
+
+.faq .accordion .card .card-header {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.faq .accordion .card .card-header h5 {
+  padding: 0;
+}
+
+.faq .accordion .card .card-header h5 button {
+  color: #023118;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 30px 0 70px;
+  height: 80px;
+  display: block;
+  width: 100%;
+  /* color: rgba(30, 48, 86, 0.8); */
+  text-align: left;
+  background: #fff;
+  /* -webkit-box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1);
+  box-shadow: 0px -50px 140px 0px rgba(69, 81, 100, 0.1); */
+  /* border-radius: 10px 10px 0 0; */
+  position: relative;
+}
+
+.faq .accordion .card .card-header h5 button:after {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #159c4a;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #159c4a;
+  border-radius: 5px;
+  line-height: 100%;
+  content: "\f067";
+  font-size: 10px;
+  line-height: 18px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.faq .accordion .card .card-header h5 button.collapsed {
+  background: #fff;
+  /* border-radius: 10px; */
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(97, 125, 255, 0.2);
+}
+
+.faq .accordion .card .card-header h5 button[aria-expanded="true"]:after {
+  content: "\f068";
+  color: #fff;
+  background: #159c4a;
+}
+
+.faq .accordion .card .card-body {
+  /* -webkit-box-shadow: 0px 15px 140px 0px rgb(69 81 100 / 10%); */
+  /* box-shadow: 0px 15px 140px 0px rgb(69 81 100 / 10%); */
+  border-radius: 0 0 10px 10px;
+  padding-top: 0;
+  margin-top: -6px;
+  padding-left: 72px;
+  padding-right: 70px;
+  padding-bottom: 23px;
+  color: #5c6861;
+  line-height: 30px;
+  font-size: 14px;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Stay on top */
+  top: 0;
+  background-color: #fff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 15px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: #000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 50%;
+  left: -73px;
+  font-size: 36px;
+  margin-left: 50px;
+  background: #000;
+  border-radius: 0px 35px 35px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 0px solid #fff;
+  border-bottom: 20px solid transparent;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+.sidenav {
+  right: 0;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.sidenav {
+  right: 0;
+}
+
+.fa-angle-right {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+.fa-angle-right:hover {
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
+.form {
+  margin: 30px;
+}
+
+.enquiry-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.enquiry-head {
+  color: #113904;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "poppins";
+}
+
+.enquiry-content {
+  color: #298e0e;
+  font-size: 12px;
+  font-family: "poppins";
+}
+
+.eq-label {
+  color: #113904;
+  font-size: 14px;
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+.eq-input {
+  background-color: #dddddd;
+  border-radius: 50px;
+  padding: 5px 10px;
+  border: none;
+}
+
+.eq-textarea {
+  background-color: #dddddd;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+}
+
+.eq-input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.eq-submit {
+  background-color: #1e8800;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.eq-submit:focus-visible {
+  border: none;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 10px;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amenities</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="amenities.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar" style="overflow: initial">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+          <li class="nav-item active ">
+            <a class="nav-link"   href="index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+            <!-- dropdown
+            dropdown-toggle
+            id="navbarDropdown"
+             role="button"
+             data-toggle="dropdown"
+             aria-haspopup="true"
+             aria-expanded="false" -->
+              
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Floor Plan</a>
+                <a class="dropdown-item" href="#">Maps</a>
+                <a class="dropdown-item" href="#">Project Content</a>
+                <a class="dropdown-item" href="#">Gallery</a>
+                <a class="dropdown-item" href="amenities.html">Ameties</a>
+                <a class="dropdown-item" href="#">Modal Flat</a>
+                <a class="dropdown-item" href="#">Tech Specs</a>
+                <a class="dropdown-item" href="#">Testimonial</a>
+              </div> -->
+          </li>
+          <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >About</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Shiridi</a>
+                <a class="dropdown-item" href="#">Project</a>
+                <a class="dropdown-item" href="#">Location</a>
+              </div>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loan.html">Loan</a>
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">FAQ</a>
+              </div> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="navbar-brand" href="#"
+              ><img class="logo" src="images/Shirdi-Logo (1).png" alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="brochure.html">Brochure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+            </li> -->
+          <li class="nav-item">
+            <button class="nav-link Contact contact-link" onclick="openNav()">
+              Enquiry
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="enquiry-header">
+        <h5 class="enquiry-head">Enquiry Now</h5>
+      <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+      </div>
+      
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-right"></i></a>
+      <div class="form">
+  
+        <div class="form-item">
+          <label class="eq-label" for="username">NAME</label>
+          <input class="eq-input" type="text" id="username"  >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="mail">E-MAIL</label>
+          <input class="eq-input" type="mail" id="mail" >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">MOBILE</label>
+          <input class="eq-input" type="tel" id="phone" >
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">OTP</label>
+          <input class="eq-input" type="tel" id="phone" >
+        </div>
+        <div class="form-item">
+         
+          <label class="eq-label" for="flat">PROJECTS</label>
+             <select class="eq-input" name="flat" id="flat">
+               <option value="whitefield II 4A">whitefield II 4A</option>
+
+              </select>
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="message">MESSAGE:</label>
+          <textarea  class="eq-textarea" placeholder="Type here.........."  id="message" name="message" rows="4" cols="50">
+        
+          </textarea>
+        </div>
+        <button class="eq-submit">SUBMIT</button>
+        
+       
+        
+      </div> 
+		</div>
+    
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="images/cam.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">24 x 7 survellience camera
+                </h5>
+                <p class="card-text">
+                  Multi level security, we have ensured you to stay safe,always
+                </p>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="images/intercom.jpg" class="card-img-top" alt="..."/>
+              <div class="card-body">
+                <h5 class="card-title">Intercom for all apartments</h5>
+                <p class="card-text">
+                    Intercom for all apartments with the security entry level
+                </p>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="images/extinguisher.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Fire Extinguisher</h5>
+                <p class="card-text">
+                 The fire extinguisher safe from tampering until times of emergency
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <script src="./javascript/mail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function openNav() {
+	    document.getElementById("mySidenav").style.width = "300px";
+	}
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+  </script>
+  </body>
+</html>

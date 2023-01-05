@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="gsap.css" rel="stylesheet" />
+    <link href="loan.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar" style="overflow: initial">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+            <!-- id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"  -->
+            <!--  dropdown-toggle -->
+
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Floor Plan</a>
+              <a class="dropdown-item" href="#">Maps</a>
+              <a class="dropdown-item" href="#">Project Content</a>
+              <a class="dropdown-item" href="#">Gallery</a>
+              <a class="dropdown-item" href="amenities.html">Ameties</a>
+              <a class="dropdown-item" href="#">Modal Flat</a>
+              <a class="dropdown-item" href="#">Tech Specs</a>
+              <a class="dropdown-item" href="#">Testimonial</a>
+            </div> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+            <!-- dropdown-toggle
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Shiridi</a>
+              <a class="dropdown-item" href="#">Project</a>
+              <a class="dropdown-item" href="#">Location</a>
+            </div> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loan.html">Loan</a>
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+            </div> -->
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li> -->
+
+          <li class="nav-item">
+            <a class="navbar-brand" href="#"
+              ><img class="logo" src="images/Shirdi-Logo (1).png" alt=""
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="brochure.html">Brochure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
+          </li> -->
+          <li class="nav-item">
+            <button class="nav-link Contact contact-link" onclick="openNav()">
+              Enquiry
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <div class="enquiry-header">
+        <h5 class="enquiry-head">Enquiry Now</h5>
+        <p class="enquiry-content">Will Get In Touch With You Shortly</p>
+      </div>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><i class="fa-solid fa-angle-right"></i
+      ></a>
+      <div class="form">
+        <div class="form-item">
+          <label class="eq-label" for="username">NAME</label>
+          <input class="eq-input" type="text" id="username" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="mail">E-MAIL</label>
+          <input class="eq-input" type="mail" id="mail" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">MOBILE</label>
+          <input class="eq-input" type="tel" id="phone" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="phone">OTP</label>
+          <input class="eq-input" type="tel" id="phone" />
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="flat">PROJECTS</label>
+          <select class="eq-input" name="flat" id="flat">
+            <option value="whitefield II 4A">whitefield II 4A</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label class="eq-label" for="message">MESSAGE:</label>
+          <textarea
+            class="eq-textarea"
+            placeholder="Type here.........."
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+          >
+          </textarea>
+        </div>
+        <button class="eq-submit">SUBMIT</button>
+      </div>
+    </div>
+    <div class="container-fluid loanbanner">
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div
+          class="col-md-7"
+          style="padding-top: 100px; padding-right: 100px; padding-left: 70px"
+        >
+          <div class="bankoption">
+            <h5 class="loan-heading m-0">Loan Calculator</h5>
+            <p class="m-0" style="color: #fff; font-size: 12px">
+              Total: <span id="total">1000000</span>
+            </p>
+            <div class="banksinner">
+              <article
+                id="art"
+                style="
+                  border: 4px solid #1a4b83;
+                  border-radius: 5px;
+                  background-color: antiquewhite;
+                  width: 100px;
+                  height: 100px;
+                  margin-top: 2%;
+                "
+              >
+                <img
+                  src="/images/hdfc.png"
+                  alt="Bank Logo"
+                  id="image"
+                  height="100%"
+                  width="100%"
+                />
+              </article>
+              <select
+                id="choose"
+                style="
+                  width: 100px;
+                  font-size: 12px;
+                  border: none;
+                  color: #3d6892;
+                "
+                ;
+                onchange="fun();"
+              >
+                <option selected class="bankselect">Select Bank</option>
+                <option>SBI</option>
+                <option>UBI</option>
+                <option>PNB</option>
+                <option>BOB</option>
+                <option>HDFC</option>
+              </select>
+            </div>
+          </div>
+          <div class="emitext">
+            <h6 class="indicative">
+              <span>Indicative EMI: ₹</span> <span id="emi">866667</span> /
+              Month
+            </h6>
+          </div>
+          <div class="downpayment">
+            <input
+              type="range"
+              id="downPayment"
+              min="0"
+              max="100000"
+              step="10000"
+              value="200000"
+            />
+            <div class="detail">
+              <p style="color: #000; font-size: 14px">
+                DownPayment: Rs.
+                <span id="downPaymentText" style="color: #0b1c4c">2000000</span>
+              </p>
+              <p style="color: #000; font-size: 14px">
+                Loan Payment: Rs.
+                <span id="loanAmountText" style="color: #0b1c4c">8000000</span>
+              </p>
+            </div>
+          </div>
+          <div class="loandetails">
+            <div>
+              <p style="color: #000; padding-right: 19px; font-size: 14px">
+                Tenure:
+                <span id="loanPeriodText" style="color: #0b1c4c">12</span
+                ><span style="color: #0b1c4c">Years</span>
+              </p>
+              <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
+            </div>
+            <input
+              type="range"
+              id="loanPeriod"
+              min="1"
+              max="30"
+              value="12"
+              class="tenureRange"
+            />
+          </div>
+          <div class="loandetails">
+            <div>
+              <p style="color: #000; font-size: 14px">
+                Interest Rate:
+                <span id="interestRateText" style="color: #0b1c4c">6.5</span
+                ><span style="color: #0b1c4c">%</span>
+              </p>
+              <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
+            </div>
+            <input
+              type="range"
+              id="interestRate"
+              min="1"
+              max="15"
+              step="0.5"
+              value="6.5"
+              disabled
+              class="interestRange"
+            />
+          </div>
+          <div
+            class="faqBtn"
+            style="display: flex; justify-content: left; align-items: left"
+          >
+            <a href="faq.html" class="btn btn-info" role="button"
+              >Frequently Asked Questions</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./javascript/mail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      var total = document.getElementById("total").innerText;
+      var downPayment = document.getElementById("downPayment");
+      var downPaymentText = document.getElementById("downPaymentText");
+      var loanAmountText = document.getElementById("loanAmountText");
+      var emi = document.getElementById("emi");
+      var loanPeriod = document.getElementById("loanPeriod");
+      var loanPeriodText = document.getElementById("loanPeriodText");
+      var interest = document.getElementById("interestRate");
+
+      downPayment.max = total;
+
+      downPayment.oninput = (e) => {
+        let value = e.target.value;
+        downPaymentText.innerText = value;
+        let p = parseInt(total) - parseInt(value);
+        loanAmountText.innerText = p;
+        let n = parseInt(loanPeriod.value) * 12;
+        let r = parseFloat(interest.value) / 1200;
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+
+      loanPeriod.oninput = (e) => {
+        let n = parseInt(e.target.value) * 12;
+        loanPeriodText.innerText = n / 12;
+        let p = parseInt(loanAmountText.innerText);
+        let r = parseFloat(interest.value) / 1200;
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+
+      fun = function () {
+        var select = document.getElementById("choose");
+        // var img = document.createElement("img");
+        // var artcle = document.getElementById("art");
+        // var index=select.selectedIndex;
+        var src_arr = [
+          {
+            img: "/images/hdfc.png",
+            interest: "6.5",
+          },
+          {
+            img: "/images/sbi.jpg",
+            interest: "8.55",
+          },
+          {
+            img: "/images/ubi.png",
+            interest: "8.25",
+          },
+          {
+            img: "/images/pnb.png",
+            interest: "8.75",
+          },
+          {
+            img: "/images/bob.jpg",
+            interest: "7.45",
+          },
+          {
+            img: "/images/hdfc.png",
+            interest: "8.60",
+          },
+        ];
+        var img = document.getElementById("image");
+        // img.src=src_arr[index];
+        var interest = document.getElementById("interestRate");
+        var interestText = document.getElementById("interestRateText");
+
+        img.src = src_arr[select.selectedIndex].img;
+        interest.value = src_arr[select.selectedIndex].interest;
+        interestText.innerText = src_arr[select.selectedIndex].interest;
+
+        let n = parseInt(loanPeriodText.innerText) * 12;
+        let p = parseInt(loanAmountText.innerText);
+        let r = parseFloat(interest.value) / 1200;
+
+        let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        emi.innerText = Math.round(emilValue);
+      };
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      /* Simple appearence with animation AN-1*/
+    </script>
+  </body>
+</html>
