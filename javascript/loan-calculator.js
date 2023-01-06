@@ -29,7 +29,8 @@ loanPeriod.oninput = (e) => {
   emi.innerText = Math.round(emilValue);
 };
 
-fun = function () {
+function fun() {
+  console.log("fun func");
   var select = document.getElementById("choose");
   // var img = document.createElement("img");
   // var artcle = document.getElementById("art");
@@ -75,4 +76,4 @@ fun = function () {
 
   let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
   emi.innerText = Math.round(emilValue);
-};
+}
