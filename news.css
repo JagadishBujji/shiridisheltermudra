@@ -65,54 +65,7 @@ body {
 .contact-link:hover {
   color: #fff;
 }
-.carousel {
-  position: relative;
-}
-.carousel-item img {
-  display: block !important;
-  width: 60% !important;
-  border: 3px solid gold;
-  border-radius: 10px;
-  height:210px;
-  object-fit: cover;
-}
-#carousel-thumbs {
-  background: rgba(255,255,255,.3);
-  bottom: 0;
-  left: 0;
-  padding: 0 50px;
-  right: 0;
-}
-#carousel-thumbs img {
-  border: 5px solid transparent;
-  cursor: pointer;
-}
-#carousel-thumbs img:hover {
-  border-color: rgba(255,255,255,.3);
-}
-#carousel-thumbs .selected img {
-  border-color: #fff;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-}
-
-@media all and (max-width: 767px) {
-  .carousel-container #carousel-thumbs img {
-    border-width: 3px;
-  }
-}
-@media all and (min-width: 576px) {
-  .carousel-container #carousel-thumbs {
-    position: absolute;
-  }
-}
-@media all and (max-width: 576px) {
-  .carousel-container #carousel-thumbs {
-    background: #ccccce;
-  }
-}
+/* newsBlog */
 
 .dropbtn {
   /* background-color: #04aa6d; */
@@ -155,3 +108,214 @@ body {
 /* .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 } */
+/* 
+
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Stay on top */
+  top: 0;
+  background-color: #fff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 15px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: #000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 50%;
+  left: -73px;
+  font-size: 36px;
+  margin-left: 50px;
+  background: #000;
+  border-radius: 0px 35px 35px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 0px solid #fff;
+  border-bottom: 20px solid transparent;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+.sidenav {
+  right: 0;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.sidenav {
+  right: 0;
+}
+
+.container-fluid {
+  position: relative;
+  padding-top: 90px;
+  height: 70vh;
+}
+
+.myslides-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-myslides {
+  color: #209855;
+  padding-left: 85px;
+  text-align: justify;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.img-news {
+  width: 250px;
+  height: 210px;
+  border-radius: 20px;
+  border: 2px solid gold;
+  box-shadow: 0px 0px 10px 0px gold;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -3%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: -3%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  width: 14.66%;
+  margin-left: 14px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.carousel-img {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.carousel-para {
+  font-size: 12px;
+  text-align: center;
+}
