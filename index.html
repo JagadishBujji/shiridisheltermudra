@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
+    <title>Shiridi Shelters</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
@@ -12,7 +12,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <title>Shiridi Shelters</title>
 
     <link
       rel="stylesheet"
@@ -54,6 +53,8 @@
       href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"
     />
     <!-- custom css -->
+
+    <link href="loan.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
 
@@ -238,7 +239,15 @@
           </div>
         </div>
         <!-- end of section 2 (Day & Night) -->
+
+        <div class="swiper-slide homes">
+        <!-- homes -->
+        </div>
+
         <div class="swiper-slide blue">
+          <!-- live in pardise -->
+        </div>
+        <div class="swiper-slide medavakam">
           <!-- live in pardise -->
         </div>
         <div class="swiper-slide green">
@@ -370,7 +379,7 @@
             </a>
           </div>
         </div>
-        <div class="swiper-slide mudra"></div>
+        <!-- <div class="swiper-slide mudra"></div> -->
         <div class="swiper-slide gray"></div>
         <div class="swiper-slide">maps</div>
         <div class="swiper-slide">
@@ -382,9 +391,197 @@
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/227/5.jpg" alt="">  
           </div>
         </div>
-        <div class="swiper-slide">Slide 11</div>
-        <div class="swiper-slide">Slide 12</div>
-        <div class="swiper-slide">Slide 13</div>
+        <div class="swiper-slide safety"></div>
+        <div class="swiper-slide embracing"></div>
+        <!-- <div class="swiper-slide safety"></div>
+        <div class="swiper-slide safety"></div>
+        <div class="swiper-slide safety"></div> -->
+        <div class="swiper-slide">Slide 14</div>
+        <div class="swiper-slide">
+          <div class="container-fluid loanbanner">
+            <div class="row">
+              <div class="col-md-5"></div>
+              <div
+                class="col-md-7"
+                style="
+                  padding-top: 100px;
+                  padding-right: 100px;
+                  padding-left: 70px;
+                "
+              >
+                <div class="bankoption">
+                  <h5 class="loan-heading m-0">Loan Calculator</h5>
+                  <p class="m-0" style="color: #fff; font-size: 12px">
+                    Total: <span id="total">1000000</span>
+                  </p>
+                  <div class="banksinner">
+                    <article
+                      id="art"
+                      style="
+                        border: 4px solid #1a4b83;
+                        border-radius: 5px;
+                        background-color: antiquewhite;
+                        width: 100px;
+                        height: 100px;
+                        margin-top: 2%;
+                      "
+                    >
+                      <img
+                        src="/images/hdfc.png"
+                        alt="Bank Logo"
+                        id="image"
+                        height="100%"
+                        width="100%"
+                      />
+                    </article>
+                    <select
+                      id="choose"
+                      style="
+                        width: 100px;
+                        font-size: 12px;
+                        border: none;
+                        color: #3d6892;
+                      "
+                      ;
+                      onchange="fun();"
+                    >
+                      <option selected class="bankselect">Select Bank</option>
+                      <option>SBI</option>
+                      <option>UBI</option>
+                      <option>PNB</option>
+                      <option>BOB</option>
+                      <option>HDFC</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="emitext">
+                  <h6 class="indicative">
+                    <span>Indicative EMI: ₹</span>
+                    <span id="emi">866667</span> / Month
+                  </h6>
+                </div>
+                <div class="downpayment">
+                  <input
+                    type="range"
+                    id="downPayment"
+                    min="0"
+                    max="100000"
+                    step="10000"
+                    value="200000"
+                  />
+                  <div class="detail">
+                    <p style="color: #000; font-size: 14px">
+                      DownPayment: Rs.
+                      <span id="downPaymentText" style="color: #0b1c4c"
+                        >2000000</span
+                      >
+                    </p>
+                    <p style="color: #000; font-size: 14px">
+                      Loan Payment: Rs.
+                      <span id="loanAmountText" style="color: #0b1c4c"
+                        >8000000</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="loandetails">
+                  <div>
+                    <p
+                      style="color: #000; padding-right: 19px; font-size: 14px"
+                    >
+                      Tenure:
+                      <span id="loanPeriodText" style="color: #0b1c4c">12</span
+                      ><span style="color: #0b1c4c">Years</span>
+                    </p>
+                    <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
+                  </div>
+                  <input
+                    type="range"
+                    id="loanPeriod"
+                    min="1"
+                    max="30"
+                    value="12"
+                    class="tenureRange"
+                  />
+                </div>
+                <div class="loandetails">
+                  <div>
+                    <p style="color: #000; font-size: 14px">
+                      Interest Rate:
+                      <span id="interestRateText" style="color: #0b1c4c"
+                        >6.5</span
+                      ><span style="color: #0b1c4c">%</span>
+                    </p>
+                    <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
+                  </div>
+                  <input
+                    type="range"
+                    id="interestRate"
+                    min="1"
+                    max="15"
+                    step="0.5"
+                    value="6.5"
+                    disabled
+                    class="interestRange"
+                  />
+                </div>
+                <div
+                  class="faqBtn"
+                  style="
+                    display: flex;
+                    justify-content: left;
+                    align-items: left;
+                  "
+                >
+                  <a href="faq.html" class="btn btn-info" role="button"
+                    >Frequently Asked Questions</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <section class="panel mudra1">
+            <div class="whitefield">
+              <img
+                src="/images/mudra(1).png"
+                alt="mudra-logo"
+                class="mudra-img"
+              />
+            </div>
+            <div class="row number-send">
+              <div class="col-md-3 view">
+                <button class="viewlink" onclick="NewTab()">view</button>
+              </div>
+              <div class="col-md-8 send">
+                <div class="row inner-text">
+                  <div class="col-md-2">
+                    <img
+                      src="/images/whatsapp.png"
+                      alt="mudra-logo"
+                      class="whatsapp"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <p class="brochure" style="text-align: center">
+                      <span class="bro"
+                        >Get E-Brochures<br />
+                        Through<br
+                      /></span>
+                      <span class="wh">Whatsapp</span>
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="num91-label">+91</label>
+                    <input type="tel" class="send-no" />
+                    <button class="send-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -394,5 +591,7 @@
     <script src="./javascript/swiper.js"></script>
     <script src="./javascript/index.js"></script>
     <script src="./javascript/mail.js"></script>
+    <script src="./javascript/loan-calculator.js"></script>
+    <script src="./javascript/brochure.js"></script>
   </body>
 </html>
