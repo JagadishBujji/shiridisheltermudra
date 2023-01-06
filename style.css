@@ -125,6 +125,7 @@ body {
 #navbar {
   /* overflow: visible; */
   background-color: #fff;
+  /* transition: 2s; */
 }
 
 .dropdown-item {
@@ -1373,6 +1374,7 @@ input:checked + .slider:before {
   height: 50px;
   margin: 0 auto;
   background-color: #03a9f473;
+  box-shadow: 0px 0px 10px 0px #ccc;
   border-radius: 56px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -2718,35 +2720,35 @@ header {
   display: grid;
   grid-gap: 5px;
   grid-template-areas:
-    'A'
-    'B' 
-    'C'
-    'D'   
-    'E';
+    "A"
+    "B"
+    "C"
+    "D"
+    "E";
 }
 @media (min-width: 576px) {
   .gallery_main {
     grid-template-columns: 1.52fr 1fr 1fr 1.525fr;
     grid-template-areas:
-      'A  B  C  E'
-      'A  D  D  E';
-  } 
+      "A  B  C  E"
+      "A  D  D  E";
+  }
 }
 
 img:nth-child(1) {
- grid-area: A;
+  grid-area: A;
 }
 img:nth-child(2) {
- grid-area: B;
+  grid-area: B;
 }
 img:nth-child(3) {
- grid-area: C;
+  grid-area: C;
 }
 img:nth-child(4) {
- grid-area: D;
+  grid-area: D;
 }
 img:nth-child(5) {
- grid-area: E;
+  grid-area: E;
 }
 img {
   width: 100%;
@@ -2787,7 +2789,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.embracing{
+.embracing {
   background-image: url(images/image6-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
