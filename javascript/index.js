@@ -2,18 +2,36 @@
 function navbar() {
   setTimeout(() => {
     navbar.style.opacity = 1;
-  }, 5000);
+  }, 4000);
 
   var navbar = document.getElementById("navbar");
 
   swiper.on("slideChange", function () {
     console.log("swiper", swiper.activeIndex);
+    navbar.style.opacity = 1;
     if (swiper.activeIndex > 0) {
       navbar.classList.add("sticky");
       navbar.classList.remove("reverseSticky");
+      setTimeout(() => {
+        navbar.style.opacity = 0;
+      }, 3000);
+      navbar.style.transition = "all 2s";
     } else {
       navbar.classList.remove("sticky");
       navbar.classList.add("reverseSticky");
+      navbar.style.opacity = 1;
+      navbar.style.transition = "";
+    }
+  });
+
+  navbar.addEventListener("mouseover", () => {
+    navbar.style.opacity = 1;
+  });
+  navbar.addEventListener("mouseout", () => {
+    if (swiper.activeIndex > 0) {
+      setTimeout(() => {
+        navbar.style.opacity = 0;
+      }, 3000);
     }
   });
 }
@@ -21,7 +39,6 @@ function navbar() {
 navbar();
 
 // enquiry
-
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
 }
@@ -66,13 +83,13 @@ function toggleFunction() {
   console.log("night: style - ", night);
   if (toggleCheckbox.checked == true) {
     day.style.opacity = 0;
-    star.style.opacity = 0.2;
+    star.style.opacity = 0.5;
     moon.style.opacity = 1;
     star.style.animation = "";
     moon.style.animation = "bounce 4s ease infinite";
   } else {
     day.style.opacity = 1;
-    moon.style.opacity = 0.2;
+    moon.style.opacity = 0.5;
     star.style.opacity = 1;
     moon.style.bottom = "8px";
     moon.style.animation = "";

@@ -53,12 +53,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "fedra-sans";
+  font-family: "FedraSansBook";
 }
 
 @font-face {
-  font-family: "fedra-sans";
-  src: url("fedra-sans-book_nANwg/Fedra\ Sans\ Book/");
+  font-family: "FedraSansBook";
+  src: url("FedraSansBook/FedraSansBook.ttf");
 }
 
 .landing-img {
@@ -112,7 +112,7 @@ body {
   animation: fadeIn 2s;
   animation-delay: 3s;
   opacity: 0;
-  font-family: "fedra-sans";
+  font-family: "FedraSansBook";
 }
 
 /* 
@@ -125,6 +125,7 @@ body {
 #navbar {
   /* overflow: visible; */
   background-color: #fff;
+  /* transition: 2s; */
 }
 
 .dropdown-item {
@@ -209,6 +210,48 @@ body::-webkit-scrollbar {
 .navbar-light .navbar-nav .show > .nav-link {
   color: #3a833d;
 }
+
+.dropbtn {
+  /* background-color: #04aa6d; */
+  color: #3a833d;
+  /* font-size: 16px; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .dropdown-content a:hover {
+  background-color: #ddd;
+} */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
 
 .enquiry {
   position: fixed;
@@ -1373,6 +1416,7 @@ input:checked + .slider:before {
   height: 50px;
   margin: 0 auto;
   background-color: #03a9f473;
+  box-shadow: 0px 0px 10px 0px #ccc;
   border-radius: 56px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -1852,7 +1896,7 @@ input:checked:before {
   background-color: #f4e7df;
   color: #d54101;
   cursor: pointer;
-  font-family: "poppins";
+  font-family: "FedraSansBook";
   margin: 0 20px;
   font-size: 14px;
 }
@@ -2205,11 +2249,11 @@ input:checked:before {
   align-items: flex-start;
 }
 body {
-  font-family: "fedra-sans";
+  font-family: "FedraSansBook";
 }
 
 @font-face {
-  font-family: "fedra-sans";
+  font-family: "FedraSansBook";
   src: url("fedra-sans-book_nANwg/Fedra\ Sans\ Book/");
 }
 
