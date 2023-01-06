@@ -90,6 +90,16 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
+#landingImg,
+#landingImgMain {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
 @keyframes fadeIn1 {
   0% {
     opacity: 0;
@@ -2739,7 +2749,7 @@ header {
 
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-  background: #fff;
+  background: #398239;
 }
 .gallery_main {
   display: grid;
@@ -2882,3 +2892,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* .img-techspec {
+  width: 10px;
+  height: 10px;
+} */

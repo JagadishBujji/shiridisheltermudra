@@ -6,9 +6,17 @@ function navbar() {
 
   var navbar = document.getElementById("navbar");
 
+  function navbarOpacityHandler() {
+    if (swiper.activeIndex > 0) {
+      setTimeout(() => {
+        navbar.style.opacity = 0;
+      }, 3000);
+    }
+  }
+
   swiper.on("slideChange", function () {
-    console.log("swiper", swiper.activeIndex);
-    navbar.style.opacity = 1;
+    // console.log("swiper", swiper.activeIndex);
+    // navbar.style.opacity = 1; // add this if we need to hide navbar on other pages
     if (swiper.activeIndex > 0) {
       navbar.classList.add("sticky");
       navbar.classList.remove("reverseSticky");
@@ -16,22 +24,19 @@ function navbar() {
         navbar.style.opacity = 0;
       }, 3000);
       navbar.style.transition = "all 2s";
+      navbar.addEventListener("mouseover", () => {
+        navbar.style.opacity = 1;
+      });
+      navbar.addEventListener("mouseout", navbarOpacityHandler);
     } else {
+      navbar.removeEventListener("mouseout", navbarOpacityHandler);
       navbar.classList.remove("sticky");
       navbar.classList.add("reverseSticky");
       navbar.style.opacity = 1;
       navbar.style.transition = "";
-    }
-  });
-
-  navbar.addEventListener("mouseover", () => {
-    navbar.style.opacity = 1;
-  });
-  navbar.addEventListener("mouseout", () => {
-    if (swiper.activeIndex > 0) {
       setTimeout(() => {
-        navbar.style.opacity = 0;
-      }, 3000);
+        navbar.style.opacity = 1;
+      }, 2000);
     }
   });
 }
@@ -138,3 +143,12 @@ function imageAnimations(type) {
 }
 
 // maps
+
+// landingImage
+const landingImage = document.getElementById("landingImg");
+const landingImageMain = document.getElementById("landingImgMain");
+
+setTimeout(() => {
+  landingImageMain.style.opacity = 0;
+  landingImage.style.opacity = 1;
+}, 3000);
