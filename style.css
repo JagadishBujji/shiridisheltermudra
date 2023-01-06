@@ -2733,6 +2733,10 @@ header {
   }
 }
 
+.w-100{
+  height: 100vh;
+}
+
 /* Fin Seccion principal - RESPONSIVE */
 /* ------------ */
 
@@ -2747,6 +2751,30 @@ header {
 
 .embracing{
   background-image: url(images/image6-pdf.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.location{
+  background-image: url(images/image7-pdf.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.specs{
+  background-image: url(images/image8-pdf.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modalflat{
+  background-image: url(images/image9-pdf.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.brands{
+  background-image: url(images/image10-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
