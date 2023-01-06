@@ -2718,35 +2718,35 @@ header {
   display: grid;
   grid-gap: 5px;
   grid-template-areas:
-    'A'
-    'B' 
-    'C'
-    'D'   
-    'E';
+    "A"
+    "B"
+    "C"
+    "D"
+    "E";
 }
 @media (min-width: 576px) {
   .gallery_main {
     grid-template-columns: 1.52fr 1fr 1fr 1.525fr;
     grid-template-areas:
-      'A  B  C  E'
-      'A  D  D  E';
-  } 
+      "A  B  C  E"
+      "A  D  D  E";
+  }
 }
 
 img:nth-child(1) {
- grid-area: A;
+  grid-area: A;
 }
 img:nth-child(2) {
- grid-area: B;
+  grid-area: B;
 }
 img:nth-child(3) {
- grid-area: C;
+  grid-area: C;
 }
 img:nth-child(4) {
- grid-area: D;
+  grid-area: D;
 }
 img:nth-child(5) {
- grid-area: E;
+  grid-area: E;
 }
 img {
   width: 100%;
@@ -2771,8 +2771,30 @@ img {
   }
 }
 
-.w-100{
+.w-100 {
   height: 100vh;
+}
+
+.verify {
+  position: absolute;
+  right: 50px;
+  bottom: 196px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e9528;
+  margin: 0;
+  font-weight: 600;
+}
+
+.getotp {
+  position: absolute;
+  right: 45px;
+  bottom: 266px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e9528;
+  margin: 0;
+  font-weight: 600;
 }
 
 /* Fin Seccion principal - RESPONSIVE */
@@ -2787,31 +2809,31 @@ img {
   background-repeat: no-repeat;
 }
 
-.embracing{
+.embracing {
   background-image: url(images/image6-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
-.location{
+.location {
   background-image: url(images/image7-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
-.specs{
+.specs {
   background-image: url(images/image8-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
-.modalflat{
+.modalflat {
   background-image: url(images/image9-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
-.brands{
+.brands {
   background-image: url(images/image10-pdf.png);
   background-size: 100% 100vh;
   background-position: center;
