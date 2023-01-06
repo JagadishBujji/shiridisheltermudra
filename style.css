@@ -1039,10 +1039,10 @@ input[type="range"]:focus::-ms-fill-upper {
 .viewlink {
   color: #0f6459;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
   width: 100%;
-  padding: 58px;
+  padding: 60px;
   background: #d1e3e3;
   outline: none;
   border: none;
@@ -1064,7 +1064,7 @@ input[type="range"]:focus::-ms-fill-upper {
     rgba(0, 158, 160, 1) 19%,
     rgba(7, 132, 131, 1) 61%
   );
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -1072,6 +1072,8 @@ input[type="range"]:focus::-ms-fill-upper {
   width: 75%;
   border-radius: 30px;
   border: 3px solid #a3ef3e;
+  font-size: 18px;
+  padding: 3px 35px;
 }
 
 .send-btn {
@@ -1079,10 +1081,19 @@ input[type="range"]:focus::-ms-fill-upper {
   background: #a3ef3e;
   border: 1px solid #fff;
   font-size: 16px;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 30px;
   width: 22%;
   font-weight: 600;
+}
+
+.num91-label {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
 }
 
 .whatsapp {
@@ -1260,7 +1271,13 @@ input[type="range"]:focus::-ms-fill-upper {
 } */
 
 .mudra {
-  background-image: url(images/QuartzSink.png);
+  background-image: url(images/image1-pdf.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mudra1 {
+  background: #fff;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -2437,8 +2454,8 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .animate {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -2718,3 +2735,35 @@ header {
 
 /* Fin Seccion principal - RESPONSIVE */
 /* ------------ */
+
+.safety {
+  background-image: url(images/image1-pdf.png);
+  background-size: 100% 100vh;
+  /* width: 100%;
+  height: 100vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.embracing{
+  background-image: url(images/image6-pdf.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homes {
+  background-image: url(images/image3-pdf.png);
+  background-size: 100% 100vh;
+  /* width: 100%;
+  height: 100vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.medavakam {
+  background-image: url(images/image4-pdf.png);
+  background-size: 100% 100vh;
+  /* width: 100%;
+  height: 100vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
