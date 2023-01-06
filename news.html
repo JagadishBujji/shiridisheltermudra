@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <title>Shiridi Shelters</title>
+
+    <title>Shiridi Shelters - news</title>
 
     <link
       rel="stylesheet"
@@ -28,6 +28,13 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -120,9 +127,9 @@
               <a class="dropdown-item" href="faq.html">FAQ</a>
             </div> -->
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
 
           <li class="nav-item">
             <a class="navbar-brand" href="#"
@@ -135,9 +142,14 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
-          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropbtn" href="#"><i class="fas fa-bars"></i></a>
+            <div class="dropdown-content">
+              <a href="buyersguide.html">Buyer"s Guide</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
           <li class="nav-item">
             <button class="nav-link Contact contact-link" onclick="openNav()">
               Enquiry
@@ -166,10 +178,12 @@
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">MOBILE</label>
+          <p class="getotp">Get OTP</p>
           <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">OTP</label>
+          <p class="verify">Verify</p>
           <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
@@ -193,7 +207,7 @@
         <button class="eq-submit">SUBMIT</button>
       </div>
     </div>
-    <div class="row m-0 container-fluid">
+    <div class="row m-0 container-fluid news">
       <div class="col-md-4 p-0">
         <div class="heading-myslides">
           <h4 class="ab">About Blog</h4>
@@ -230,12 +244,18 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et
           erat id erat gravida placerat ullamcorper a ante. Proin hendrerit
           accumsan massa eget finibus. Pellentesque lobortis tincidunt
+          facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris et erat id erat gravida placerat ullamcorper a ante. Proin
+          hendrerit accumsan massa eget finibus. Pellentesque lobortis tincidunt
           facilisis.
         </p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et
           erat id erat gravida placerat ullamcorper a ante. Proin hendrerit
           accumsan massa eget finibus. Pellentesque lobortis tincidunt
+          facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris et erat id erat gravida placerat ullamcorper a ante. Proin
+          hendrerit accumsan massa eget finibus. Pellentesque lobortis tincidunt
           facilisis.
         </p>
         <p>
@@ -312,14 +332,14 @@
             <p class="carousel-para m-0">About Blog</p>
             <p class="carousel-para m-0">Real Estate Industries</p>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" style="color: #fff" onclick="plusSlides(-1)">❮</a>
+          <a class="next" style="color: #fff" onclick="plusSlides(1)">❯</a>
         </div>
       </div>
     </div>
     <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("mySidenav").style.width = "400px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
