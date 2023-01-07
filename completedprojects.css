@@ -417,8 +417,11 @@ body {
 /* col-md-5 */
 
 .Completed {
-  padding-top: 15%;
+  padding-top: 11%;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* col-md-7 */
 .details-completed {
