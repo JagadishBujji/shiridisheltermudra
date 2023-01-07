@@ -2875,9 +2875,10 @@ img {
 }
 
 .verify {
+  display: none;
   position: absolute;
   right: 50px;
-  bottom: 196px;
+  top: 352px;
   font-size: 12px;
   cursor: pointer;
   color: #3e9528;
@@ -2885,10 +2886,15 @@ img {
   font-weight: 600;
 }
 
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .getotp {
   position: absolute;
   right: 50px;
-  bottom: 266px;
+  top: 284px;
   font-size: 12px;
   cursor: pointer;
   color: #3e9528;
