@@ -20,26 +20,14 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-      integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <!-- <link href="gsap.css" rel="stylesheet" /> -->
     <link href="completedprojects.css" rel="stylesheet" />
@@ -185,38 +173,27 @@
 
     <div class="row Completed">
       <div class="col-md-5">
-        <div class="wrapper">
-          <div class="js-carousel rewind">
-            <a href="#" class="slick">
-              <img src="/images/shelter1.jpeg" alt="" class="carosel-img" />
-            </a>
-
-            <a href="#" class="slick">
-              <img src="/images/shelter2.jpeg" alt="" class="carosel-img" />
-            </a>
-
-            <!-- <a href="javascript:;" class="slick">
-              <img src="/images/shelter3.jpeg" alt="" class="carosel-img" />
-            </a>
-
-            <a href="javascript:;" class="slick">
-              <img src="/images//shelter4.jpeg" alt="" class="carosel-img" />
-            </a>
-
-            <a href="javascript:;" class="slick">
-              <img src="/images/shelter5.jpeg" alt="" class="carosel-img" />
-            </a>
-
-            <a href="javascript:;" class="slick">
-              <img src="/images/shelter6.jpeg" alt="" class="carosel-img" />
-            </a>
-
-            <a href="javascript:;" class="slick">
-              <img src="/images/shelter7.jpeg" alt="" class="carosel-img" />
-            </a> -->
+        <div #swiperRef="" class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </div>
+
       <div class="col-md-7">
         <h2>whitefield Mudra Phase I</h2>
         <p>
@@ -228,23 +205,20 @@
         </p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
-          dolor sit amet mi tempus aliquam. Donec in volutpat nibh. Pellentesque
-          condimentum tortor ac nisi interdum, ac tempor dolor vestibulum.
-          Maecenas lacus massa, luctus et convallis non, dapibus ac enim. Donec
-          at scelerisque libero, ac interdum libero.
+          dolor sit amet mi tempus aliquam.
         </p>
         <div class="row m-0 details-completed">
-          <div class="col-md-3">
+          <div class="col-md-3 border-line">
             <i class="fas fa-building"></i>
             <p class="ap">Apartments</p>
             <p class="cr">2,3,4</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3  border-line">
             <i class="fas fa-rupee-sign"></i>
             <p class="ap">Starting From</p>
             <p class="cr">1.2 cr Onwards*</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3  border-line">
             <i class="fas fa-wrench"></i>
             <p class="ap">Projects Status</p>
             <p class="cr">Completed</p>
@@ -257,93 +231,27 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
       function openNav() {
         document.getElementById("mySidenav").style.width = "400px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-      $(document).ready(function () {
-        $(".js-carousel").slick({
-          slide: "a",
-          slidesToShow: 4,
-          slidesToScroll: 4, // swipeToSlide has to set to false
-          arrows: true,
-          prevArrow: '<span class="slick-prev">Previous</span>',
-          nextArrow: '<span class="slick-next">Next</span>',
-          dots: false,
-          infinite: false,
-          speed: 300,
-          swipeToSlide: false,
-          cssEase: "cubic-bezier(0,0,.18,1)",
-          responsive: [
-            {
-              breakpoint: 961,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 3,
-              },
-            },
-            {
-              breakpoint: 769,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 667,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-
-        /* [START] Custom Rewind function for slick.js */
-        let slickRewindDetector = false;
-
-        // A better solution to prevent nest the event handlers
-        $(".js-carousel.rewind").on(
-          "click",
-          $(".slick-prev, .slick-next"),
-          function () {
-            // console.log('currentSlide: ' + $(this).slick('slickCurrentSlide'));
-            slickRewindDetector = true;
-          }
-        );
-
-        $(".js-carousel.rewind").on("afterChange", function (event, slick) {
-          if (slickRewindDetector) {
-            slickRewindDetector = false; // Reset the trigger
-
-            // console.log(slick);
-            // console.log('currentSlide: ' + $(this).slick('slickCurrentSlide'));
-            // console.log('slidesToShow: ' + $(this).slick('slickGetOption', 'slidesToShow'));
-            // console.log('slidesToScroll: ' + $(this).slick('slickGetOption', 'slidesToScroll'));
-
-            let slickSlideToShow = $(this).slick(
-              "slickGetOption",
-              "slidesToShow"
-            );
-
-            if (slick.currentSlide == 0) {
-              // If current slide is first page
-              $(this).slick("slickGoTo", slick.slideCount - 1); // Then go to the last page
-            } else if (
-              slick.slideCount - slick.currentSlide <=
-              slickSlideToShow
-            ) {
-              // If last slide has 'active' class
-              $(this).slick("slickGoTo", 0); // Then go to the firs page
-            }
-          }
-        });
-        /* [END] Custom Rewind function for slick.js */
-      });
     </script>
   </body>
 </html>
