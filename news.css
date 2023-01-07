@@ -112,11 +112,6 @@ body {
   background-color: #3e8e41;
 } */
 
-
-
-
-
-
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -419,10 +414,11 @@ body {
 }
 
 .fa-caret-down {
-  position: absolute;
+  /* position: absolute;
   top: -16px;
-  left: 72px;
+  left: 72px; */
   color: #f4ff15;
+  display: none;
 }
 
 .verify {
@@ -464,8 +460,8 @@ body {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(255,255,255); /* Fallback color */
-  background-color: rgb(255,255,255,0.8) /* Black w/ opacity */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgb(255, 255, 255, 0.8); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -540,4 +536,3 @@ body {
   text-align: center;
   font-size: 23px;
 }
-
