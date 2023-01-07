@@ -11,7 +11,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-
 }
 
 .navbar {
@@ -418,7 +417,7 @@ body {
 /* col-md-5 */
 
 .Completed {
-  padding-top: 8%;
+  padding-top: 15%;
   margin: 0;
 }
 /* col-md-7 */
@@ -456,10 +455,14 @@ body {
   color: #0d4f28;
 }
 
-.whitemudra{
+.whitemudra {
   font-size: 30px;
   font-weight: 600;
-  color: #03A648;
+  color: #03a648;
+}
+
+.content {
+  display: none;
 }
 
 /* col-md-7 */

@@ -194,8 +194,116 @@
         </div>
       </div>
 
-      <div class="col-md-7">
+      <div class="col-md-7 content">
         <h2 class="whitemudra">whitefield Mudra Phase I</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam. Donec in volutpat nibh. Pellentesque
+          condimentum tortor ac nisi interdum, ac tempor dolor vestibulum.
+          Maecenas lacus massa, luctus et convallis non, dapibus ac enim. Donec
+          at scelerisque libero, ac interdum libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam.
+        </p>
+        <div class="row m-0 details-completed">
+          <div class="col-md-3 border-line">
+            <i class="fas fa-building"></i>
+            <p class="ap">Apartments</p>
+            <p class="cr">2,3,4</p>
+          </div>
+          <div class="col-md-3 border-line">
+            <i class="fas fa-rupee-sign"></i>
+            <p class="ap">Starting From</p>
+            <p class="cr">1.2 cr Onwards*</p>
+          </div>
+          <div class="col-md-3 border-line">
+            <i class="fas fa-wrench"></i>
+            <p class="ap">Projects Status</p>
+            <p class="cr">Completed</p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-warehouse"></i>
+            <p class="ap">Rera No</p>
+            <p class="cr tn">TN01/Building20225167</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 content">
+        <h2 class="whitemudra">whitefield Mudra Phase 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam. Donec in volutpat nibh. Pellentesque
+          condimentum tortor ac nisi interdum, ac tempor dolor vestibulum.
+          Maecenas lacus massa, luctus et convallis non, dapibus ac enim. Donec
+          at scelerisque libero, ac interdum libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam.
+        </p>
+        <div class="row m-0 details-completed">
+          <div class="col-md-3 border-line">
+            <i class="fas fa-building"></i>
+            <p class="ap">Apartments</p>
+            <p class="cr">2,3,4</p>
+          </div>
+          <div class="col-md-3 border-line">
+            <i class="fas fa-rupee-sign"></i>
+            <p class="ap">Starting From</p>
+            <p class="cr">1.2 cr Onwards*</p>
+          </div>
+          <div class="col-md-3 border-line">
+            <i class="fas fa-wrench"></i>
+            <p class="ap">Projects Status</p>
+            <p class="cr">Completed</p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-warehouse"></i>
+            <p class="ap">Rera No</p>
+            <p class="cr tn">TN01/Building20225167</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 content">
+        <h2 class="whitemudra">whitefield Mudra Phase 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam. Donec in volutpat nibh. Pellentesque
+          condimentum tortor ac nisi interdum, ac tempor dolor vestibulum.
+          Maecenas lacus massa, luctus et convallis non, dapibus ac enim. Donec
+          at scelerisque libero, ac interdum libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam.
+        </p>
+        <div class="row m-0 details-completed">
+          <div class="col-md-3 border-line">
+            <i class="fas fa-building"></i>
+            <p class="ap">Apartments</p>
+            <p class="cr">2,3,4</p>
+          </div>
+          <div class="col-md-3 border-line">
+            <i class="fas fa-rupee-sign"></i>
+            <p class="ap">Starting From</p>
+            <p class="cr">1.2 cr Onwards*</p>
+          </div>
+          <div class="col-md-3 border-line">
+            <i class="fas fa-wrench"></i>
+            <p class="ap">Projects Status</p>
+            <p class="cr">Completed</p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-warehouse"></i>
+            <p class="ap">Rera No</p>
+            <p class="cr tn">TN01/Building20225167</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 content">
+        <h2 class="whitemudra">whitefield Mudra Phase 4</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
           dolor sit amet mi tempus aliquam. Donec in volutpat nibh. Pellentesque
@@ -246,6 +354,16 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      const content = document.getElementsByClassName("col-md-7");
+      content[0].style.display = "block";
+      swiper.on("slideChange", () => {
+        for (let i = 0; i < content.length; i++) {
+          content[i].style.display = "none";
+        }
+        content[swiper.activeIndex].style.display = "block";
+      });
+
       function openNav() {
         document.getElementById("mySidenav").style.width = "400px";
       }
