@@ -1160,119 +1160,140 @@ input[type="range"]:focus::-ms-fill-upper {
   text-align: center;
 }
 
-/*  page 5 mudra ends */
+/*  maps 5 mudra ends */
+.maps-head {
+  text-align: justify;
+}
+
+.ma {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.maps-md-4 {
+  background-color: #074d33;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.para-maps {
+  max-height: 200px;
+  overflow-y: scroll !important;
+}
+
+.para-maps::-webkit-scrollbar {
+  width: 12px;
+}
+
+.para-maps::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(93, 93, 93, 0.3);
+  border-radius: 10px;
+}
+
+.para-maps::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.particular-location {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 
 /* map start  */
-
-.multi-maps {
-  background: rgb(10, 109, 78);
-  background: linear-gradient(
-    90deg,
-    rgba(10, 109, 78, 1) 11%,
-    rgba(6, 96, 61, 1) 41%
-  );
-}
-.map-img {
-  width: 100%;
-  height: 100vh;
-}
-
-.item {
-  color: #fff;
-}
-.mapsinner1 {
-  margin-top: 31%;
-  background-color: #075335;
-  padding: 15px;
-  border-radius: 20px;
-  margin-left: 15%;
-}
-
-.gallery-slider_wrapper {
-  width: 100%;
-  max-width: 768px;
-  margin: auto;
-}
-.gallery-slider_wrapper .owl-theme .owl-nav {
-  margin: 0;
-}
-.gallery-slider_wrapper .owl-theme .owl-nav [class*="owl-"] {
-  width: 30px;
-  height: 60px;
-  /* background: #ffb808; */
-  font-size: 20px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-}
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev:before,
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-next:before {
-  font-family: "LineAwesome";
-  position: absolute;
-  line-height: 60px;
-  width: 30px;
-  text-align: center;
-  top: 0;
-  left: 0;
-}
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev:before {
-  content: "\f111";
-  color: #e6fa39;
-}
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  top: 0;
-  left: -25px;
-}
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-next:before {
-  content: "\f112";
-  color: #e6fa39;
-}
-.gallery-slider_wrapper .owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  top: 0;
-  right: -24px;
-}
-.gallery-slider_wrapper .owl-theme .owl-nav [class*="owl-"]:hover {
-  background: #202020;
-  color: #fff;
-}
-.gallery-slider_wrapper .single-gallery-carousel-thumbnail-box .item {
-  position: relative;
-  margin: 0 5px;
-  height: 60px;
-}
-.gallery-slider_wrapper .single-gallery-carousel-thumbnail-box .item img {
-  height: 100%;
-  cursor: pointer;
-  border: 2px solid #11a168;
-}
-.owl {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-.maps-heading {
-  text-align: left;
-}
-
-.pic {
-  padding: 0px 50px;
-  width: 100px;
-  height: 300px;
-}
-
-.mapsinner2 {
-  /* margin-top: 8%; */
-  /* background: #fff; */
-  /* border-radius: 20px; */
-  /* margin-right: 10%; */
-  /* border: 2px solid #11a168; */
-  /* width: 100%;
-  height: 100%; */
-}
 
 .metro {
   color: #e6fa39;
@@ -1282,11 +1303,11 @@ input[type="range"]:focus::-ms-fill-upper {
   color: #e6fa39;
   position: absolute;
   content: "";
-  top: 22px;
+  top: 26px;
   left: 1px;
   right: 0;
   bottom: 30px;
-  width: 35px;
+  width: 30px;
   height: 2px;
   background-color: #e6fa39;
 }
@@ -1715,6 +1736,11 @@ input:checked:before {
 
 /* sun and moon toggle  */
 
+.map-img {
+  width: 100%;
+  height: 100vh;
+}
+
 .particular-location {
   font-size: 16px;
   margin-bottom: 10px;
@@ -1748,6 +1774,16 @@ input:checked:before {
 .single-gallery-carousel-content-box::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.maps-slide {
+  background: rgb(11, 108, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 108, 75, 1) 14%,
+    rgba(7, 86, 54, 1) 68%
+  );
+  background-size: 100% 100vh
 }
 /* .single-gallery-carousel-content-box::-webkit-scrollbar {
   
@@ -1905,7 +1941,6 @@ input:checked:before {
   visibility: visible;
   opacity: 1;
 }
-
 
 /* .carousel-indicators  .tooltip.active .tooltiptext{
   background: #f4e7df;

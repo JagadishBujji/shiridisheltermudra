@@ -132,7 +132,7 @@
             <div class="dropdown-content">
               <a href="buyersguide.html">Buyer"s Guide</a>
               <a href="completedprojects.html">Completed Projects</a>
-              <a href="#">Link 3</a>
+              <a href="disclaimer.html">Disclaimer</a>
             </div>
           </li>
           <li class="nav-item">
@@ -666,7 +666,6 @@
               </button> -->
             </div>
           </div>
-
           <div id="6" class="tabcontent">
             <div id="parking1" class="tabcontent1">
               <img
@@ -697,7 +696,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide">maps</div>
+        <!-- <div class="swiper-slide">maps</div> -->
         <div class="swiper-slide">
           <div
             id="carouselExampleControls"
@@ -715,7 +714,7 @@
                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/227/2.jpg"
                     alt=""
                   />
-                  <img
+                  <imgmaps
                     src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/227/3.jpg"
                     alt=""
                   />
@@ -814,7 +813,26 @@
         <!-- <div class="swiper-slide safety"></div>
         <div class="swiper-slide safety"></div>
         <div class="swiper-slide safety"></div> -->
-        <div class="swiper-slide">Slide 14</div>
+        <div class="swiper-slide maps-slide">
+          <div class="container-fluid">
+            <div class="row m-0 maps-row">
+              <div class="col-md-4 maps-md-4">
+                <div class="maps-head">
+                  <h4 class="ma">Maps</h4>
+                  <p class="metro">maps</p>
+                </div>
+                <div class="para-maps">
+                  <h5 class="particular-location">Multinational Companies</h5>
+                  <h5 class="particular-location">Food & Entertainment</h5>
+                  <h5 class="particular-location">Hospitals</h5>
+                  <h5 class="particular-location">Educational Institutes</h5>
+                </div>
+                
+              </div>
+              <div class="col-md-8"></div>
+            </div>
+          </div>
+        </div>
         <div class="swiper-slide">
           <div class="container-fluid loanbanner">
             <div class="row">
@@ -1036,6 +1054,42 @@
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("demo");
         var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
         if (n > slides.length) {
           slideIndex = 1;
         }
