@@ -374,6 +374,192 @@
           </div>
         </div>
         <!-- <div class="swiper-slide mudra"></div> -->
+        <div class="swiper-slide">safety</div>
+        <div class="swiper-slide">
+          <div class="tab">
+            <div class="tabHead">
+              <h4>Plans</h4>
+            </div>
+            <button
+              class="tablinks"
+              onclick="openCity(event, 1)"
+              id="defaultOpen"
+            >
+              Site Plan
+            </button>
+            <button class="tablinks" onclick="openCity(event, 2)">
+              Swap Room
+            </button>
+            <button class="tablinks" onclick="openCity(event, 3)">
+              Floor Plan
+            </button>
+            <button class="tablinks" onclick="openCity(event, 4)">
+              Movement Track
+            </button>
+            <button class="tablinks" onclick="openCity(event, 5)">
+              Usable Space
+            </button>
+            <button class="tablinks" onclick="openCity(event, 6)">
+              CarParking plan
+            </button>
+          </div>
+
+          <div id="1" class="tabcontent">
+            <div id="site1" class="tabcontent1">
+              <img
+                src="/images/shelter1.jpeg"
+                alt=""
+                style="width: 450px; height: 350px"
+              />
+            </div>
+
+            <div id="site2" class="tabcontent1">
+              <img
+              src="/images/shelter2.jpeg"
+              alt=""
+              style="width: 450px; height: 350px"
+            />
+            </div>
+            <div class="tab1">
+              <button id="Lbtn" class="tablinks" onclick="openTab(event, 'site1')">
+               Plan A
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'site2')">
+                Plan B
+              </button>
+            </div>
+          </div>
+
+          <div id="2" class="tabcontent">
+            <div id="Room1" class="tabcontent1">
+              <img
+                src="/images/Plans_Swap.png"
+                alt=""
+                style="width: 450px; height: 350px"
+              />
+            </div>
+
+            <!-- <div id="Room2" class="tabcontent1">
+              <img
+              src="/images/shelter4.jpeg"
+              alt=""
+              style="width: 350px; height: 350px"
+            />
+            </div> -->
+            <div class="tab1">
+              <button id='rBtn' class="tablinks" onclick="openTab(event, 'Room1')">
+                Plan A
+              </button>
+              <!-- <button class="tablinks" onclick="openTab(event, 'Room2')">
+                Plan B
+              </button> -->
+            </div>
+          </div>
+
+          <div id="3" class="tabcontent">
+            <div id="floor1" class="tabcontent1">
+              <img
+                src="/images/shelter5.jpeg"
+                alt=""
+                style="width: 450px; height: 350px"
+              />
+            </div>
+
+            <div id="floor2" class="tabcontent1">
+              <img
+              src="/images/shelter4.jpeg"
+              alt=""
+              style="width: 450px; height: 350px"
+            />
+            </div>
+            <div class="tab1">
+              <button id="fBtn" class="tablinks" onclick="openTab(event, 'floor1')">
+                Plan A
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'floor2')">
+                Plan B
+              </button>
+            </div>
+          </div>
+
+          <div id="4" class="tabcontent">
+            <div id="track" class="tabcontent1">
+              <img
+                src="/images/Plans_Trackable.png"
+                alt=""
+                style="width: 450px; height: 350px"
+              />
+            </div>
+
+            <!-- <div id="floor2" class="tabcontent1">
+              <img
+              src="/images/shelter4.jpeg"
+              alt=""
+              style="width: 350px; height: 350px"
+            />
+            </div> -->
+            <div class="tab1">
+              <button id="tBtn" class="tablinks" onclick="openTab(event, 'track')">
+                Plan A
+              </button>
+              <!-- <button class="tablinks" onclick="openTab(event, 'Paris')">
+                Paris
+              </button> -->
+            </div>
+          </div>
+
+          <div id="5" class="tabcontent">
+            <div id="usable" class="tabcontent1">
+              <img
+                src="/images/Plans_Usable.png"
+                alt=""
+                style="width: 450px; height: 350px"
+              />
+            </div>
+
+            <!-- <div id="floor2" class="tabcontent1">
+              <img
+              src="/images/shelter4.jpeg"
+              alt=""
+              style="width: 350px; height: 350px"
+            />
+            </div> -->
+            <div class="tab1">
+              <button id='uBtn' class="tablinks" onclick="openTab(event, 'usable')">
+                Plan A
+              </button>
+              <!-- <button class="tablinks" onclick="openTab(event, 'Paris')">
+                Paris
+              </button> -->
+            </div>
+          </div>
+
+          <div id="6" class="tabcontent">
+            <div id="parking1" class="tabcontent1">
+              <img
+                src="/images/shelter8.jpeg"
+                alt=""
+                style="width: 450px; height: 350px"
+              />
+            </div>
+
+            <div id="parking2" class="tabcontent1">
+              <img
+              src="/images/shelter6.jpeg"
+              alt=""
+              style="width: 450px; height: 350px"
+            />
+            </div>
+            <div class="tab1">
+              <button id="pBtn" class="tablinks" onclick="openTab(event, 'parking1')">
+                Plan A
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'parking2')">
+                Plan B
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="swiper-slide">maps</div>
         <div class="swiper-slide">
           <div class="container gallery_main">
@@ -608,44 +794,48 @@
     <script src="./javascript/mail.js"></script>
     <script src="./javascript/loan-calculator.js"></script>
     <script src="./javascript/brochure.js"></script>
+    <script src="./javascript/swap.js"></script>
     <script>
       function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-  
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-  
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
     </script>
   </body>
 </html>
