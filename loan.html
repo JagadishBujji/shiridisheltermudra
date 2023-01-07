@@ -176,13 +176,30 @@
           class="col-md-7"
           style="padding-top: 100px; padding-right: 100px; padding-left: 70px"
         >
+          <h5 class="loan-heading m-0">Loan Calculator</h5>
+          <ul id="carousel" class="elastislide-list">
+            <li onclick="fun(0)">
+              <a href="#"><img src="/images/hdfc.png" alt="image01" /></a>
+            </li>
+            <li onclick="fun(1)">
+              <a href="#"><img src="/images/sbi.jpg" alt="image02" /></a>
+            </li>
+            <li onclick="fun(2)">
+              <a href="#"><img src="/images/ubi.png" alt="image03" /></a>
+            </li>
+            <li onclick="fun(3)">
+              <a href="#"><img src="/images/pnb.png" alt="image04" /></a>
+            </li>
+            <li onclick="fun(4)">
+              <a href="#"><img src="/images/bob.jpg" alt="image05" /></a>
+            </li>
+          </ul>
           <div class="bankoption">
-            <h5 class="loan-heading m-0">Loan Calculator</h5>
             <p class="m-0" style="color: #fff; font-size: 12px">
               Total: <span id="total">1000000</span>
             </p>
             <div class="banksinner">
-              <article
+              <!-- <article
                 id="art"
                 style="
                   border: 4px solid #1a4b83;
@@ -218,15 +235,10 @@
                 <option>PNB</option>
                 <option>BOB</option>
                 <option>HDFC</option>
-              </select>
+              </select> -->
             </div>
           </div>
-          <div class="emitext">
-            <h6 class="indicative">
-              <span>Indicative EMI: ₹</span> <span id="emi">866667</span> /
-              Month
-            </h6>
-          </div>
+
           <div class="downpayment">
             <input
               type="range"
@@ -285,9 +297,14 @@
               class="interestRange"
             />
           </div>
+          <div class="emitext">
+            <h6 class="indicative">
+              <span>Indicative EMI: ₹</span> <span id="emi">866667</span> /
+              Month
+            </h6>
+          </div>
           <div
             class="faqBtn"
-            style="display: flex; justify-content: left; align-items: left"
           >
             <a href="faq.html" class="btn btn-info" role="button"
               >Frequently Asked Questions</a
@@ -330,19 +347,19 @@
         emi.innerText = Math.round(emilValue);
       };
 
-      fun = function () {
-        var select = document.getElementById("choose");
+      function fun(bankIndex) {
+        // var select = document.getElementById("choose");
         // var img = document.createElement("img");
         // var artcle = document.getElementById("art");
         // var index=select.selectedIndex;
         var src_arr = [
           {
             img: "/images/hdfc.png",
-            interest: "6.5",
+            interest: "8.65",
           },
           {
             img: "/images/sbi.jpg",
-            interest: "8.55",
+            interest: "8.75",
           },
           {
             img: "/images/ubi.png",
@@ -350,33 +367,31 @@
           },
           {
             img: "/images/pnb.png",
-            interest: "8.75",
+            interest: "10.50",
           },
           {
             img: "/images/bob.jpg",
-            interest: "7.45",
-          },
-          {
-            img: "/images/hdfc.png",
-            interest: "8.60",
+            interest: "6.50",
           },
         ];
         var img = document.getElementById("image");
-        // img.src=src_arr[index];
+        // img.src = src_arr[bankIndex];
         var interest = document.getElementById("interestRate");
         var interestText = document.getElementById("interestRateText");
 
-        img.src = src_arr[select.selectedIndex].img;
-        interest.value = src_arr[select.selectedIndex].interest;
-        interestText.innerText = src_arr[select.selectedIndex].interest;
+        // img.src = src_arr[bankIndex].img;
+        interest.value = src_arr[bankIndex].interest;
+        console.log("interest: ", src_arr[bankIndex].interest);
+        interestText.innerText = src_arr[bankIndex].interest;
 
         let n = parseInt(loanPeriodText.innerText) * 12;
         let p = parseInt(loanAmountText.innerText);
-        let r = parseFloat(interest.value) / 1200;
+        let r = parseFloat(src_arr[bankIndex].interest) / 1200;
 
         let emilValue = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        console.log("emi: ", emilValue);
         emi.innerText = Math.round(emilValue);
-      };
+      }
     </script>
     <script>
       function openNav() {
@@ -387,5 +402,28 @@
       }
       /* Simple appearence with animation AN-1*/
     </script>
+    <script src="https://tympanus.net/Development/Elastislide/js/modernizr.custom.17475.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://tympanus.net/Development/Elastislide/js/jquerypp.custom.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://tympanus.net/Development/Elastislide/js/jquery.elastislide.js"
+    ></script>
+    <script type="text/javascript">
+      $("#carousel").elastislide({
+        minItems: 2,
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://tympanus.net/codrops/adpacks/demoad.js"
+    ></script>
   </body>
 </html>

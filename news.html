@@ -214,8 +214,13 @@
         <div class="modal-img">
           <img src="/images/mudra(1).png" alt="" style="width: 100px" />
         </div>
+<<<<<<< HEAD
         <div class="modal-close">
           <span class="close">&times;</span>
+=======
+        <div class="modal-close" onclick="closeModal()">
+          <span id="spanCloseModal" class="close">&times;</span>
+>>>>>>> b3a5f6962ceba26ecc9852960dc87954454a548b
         </div>
         <h4>New Launch</h4>
         <h4>Real Estate Industries</h4>
@@ -229,7 +234,14 @@
           With over 20 Years of experience in manufacturing bathhubs,we are an
           established and respected name
         </p>
-        <button type="button" class="btn btn-primary">Read more</button>
+        <button
+          id="btnCloseModal"
+          type="button"
+          class="btn btn-primary"
+          onclick="closeModal()"
+        >
+          Read more
+        </button>
       </div>
     </div>
     <!-- modal end -->
@@ -373,48 +385,17 @@
       window.onload = function (e) {
         displayModal();
       };
-    </script>
-    <script>
+
       function openNav() {
         document.getElementById("mySidenav").style.width = "400px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-
-      //
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-      }
+    </script>
+    <script>
+      const caretDown = document.getElementsByClassName("fa-caret-down");
+      caretDown[0].style.display = "block";
     </script>
   </body>
 </html>
