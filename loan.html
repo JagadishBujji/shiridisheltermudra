@@ -176,13 +176,31 @@
           class="col-md-7"
           style="padding-top: 100px; padding-right: 100px; padding-left: 70px"
         >
-          <div class="bankoption">
+       
             <h5 class="loan-heading m-0">Loan Calculator</h5>
+            <ul id="carousel" class="elastislide-list">
+              <li>
+                <a href="#"><img src="/images/hdfc.png" alt="image01"/></a>
+              </li>
+              <li>
+                <a href="#"><img src="/images/sbi.jpg" alt="image02" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/images/ubi.png" alt="image03" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/images/pnb.png" alt="image04" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="/images/bob.jpg" alt="image05" /></a>
+              </li>
+            </ul>
+            <div class="bankoption">
             <p class="m-0" style="color: #fff; font-size: 12px">
               Total: <span id="total">1000000</span>
             </p>
             <div class="banksinner">
-              <article
+              <!-- <article
                 id="art"
                 style="
                   border: 4px solid #1a4b83;
@@ -218,7 +236,7 @@
                 <option>PNB</option>
                 <option>BOB</option>
                 <option>HDFC</option>
-              </select>
+              </select> -->
             </div>
           </div>
           <div class="emitext">
@@ -387,5 +405,28 @@
       }
       /* Simple appearence with animation AN-1*/
     </script>
+    <script src="https://tympanus.net/Development/Elastislide/js/modernizr.custom.17475.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://tympanus.net/Development/Elastislide/js/jquerypp.custom.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://tympanus.net/Development/Elastislide/js/jquery.elastislide.js"
+    ></script>
+    <script type="text/javascript">
+      $("#carousel").elastislide({
+        minItems: 2,
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://tympanus.net/codrops/adpacks/demoad.js"
+    ></script>
   </body>
 </html>
