@@ -516,3 +516,25 @@ input[type="submit"] {
   /* align-items: center; */
   margin: 10px;
 }
+
+.verify {
+  position: absolute;
+  right: 50px;
+  bottom: 189px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e9528;
+  margin: 0;
+  font-weight: 600;
+}
+
+.getotp {
+  position: absolute;
+  right: 50px;
+  bottom: 260px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e9528;
+  margin: 0;
+  font-weight: 600;
+}

@@ -90,6 +90,16 @@ body {
   transition: opacity 1s ease-in-out;
 }
 
+#landingImg,
+#landingImgMain {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
 @keyframes fadeIn1 {
   0% {
     opacity: 0;
@@ -2739,7 +2749,7 @@ header {
 
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-  background: #fff;
+  background: #398239;
 }
 .gallery_main {
   display: grid;
@@ -2815,7 +2825,7 @@ img {
 
 .getotp {
   position: absolute;
-  right: 45px;
+  right: 50px;
   bottom: 266px;
   font-size: 12px;
   cursor: pointer;
@@ -3007,3 +3017,8 @@ img {
     opacity: 1;
   }
 }
+
+/* .img-techspec {
+  width: 10px;
+  height: 10px;
+} */

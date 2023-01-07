@@ -5,24 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Shiridi Shelters - brochure</title>
+    <title>Shiridi Shelters - buyer's guide</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -30,37 +14,23 @@
     ></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
-      href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <!-- Owl Carousel CSS-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    />
-    <!-- Magnific Popup CSS-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
-    />
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
-      rel="stylesheet"
-      type="text/css"
-    /> -->
-
     <!-- <link href="gsap.css" rel="stylesheet" /> -->
-    <link href="brochure.css" rel="stylesheet" />
+    <link href="completedprojects.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg" id="navbar" style="overflow: initial">
@@ -139,7 +109,7 @@
             <a class="nav-link dropbtn" href="#"><i class="fas fa-bars"></i></a>
             <div class="dropdown-content">
               <a href="buyersguide.html">Buyer"s Guide</a>
-              <a href="#">Link 2</a>
+              <a href="completedprojects.html">Completed Projects</a>
               <a href="#">Link 3</a>
             </div>
           </li>
@@ -171,10 +141,12 @@
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">MOBILE</label>
+          <p class="getotp">Get OTP</p>
           <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">OTP</label>
+          <p class="verify">Verify</p>
           <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
@@ -198,53 +170,88 @@
         <button class="eq-submit">SUBMIT</button>
       </div>
     </div>
-    <section class="panel mudra">
-      <div class="whitefield">
-        <img src="/images/mudra(1).png" alt="mudra-logo" class="mudra-img" />
-      </div>
-      <div class="row number-send">
-        <div class="col-md-3 view">
-          <button class="viewlink" onclick="NewTab()">view</button>
+
+    <div class="row Completed">
+      <div class="col-md-5">
+        <div #swiperRef="" class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+            <div class="swiper-slide w-50">
+              <img src="/images/shelter1.jpeg" alt="" class="swiper-img" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <div class="col-md-8 send">
-          <div class="row inner-text">
-            <div class="col-md-2">
-              <img
-                src="/images/whatsapp.png"
-                alt="mudra-logo"
-                class="whatsapp"
-              />
-            </div>
-            <div class="col-md-4">
-              <p class="brochure" style="text-align: center">
-                <span class="bro"
-                  >Get E-Brochures<br />
-                  Through<br
-                /></span>
-                <span class="wh">Whatsapp</span>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <label class="num91-label">+ 91</label>
-              <input type="tel" class="send-no" />
-              <button class="send-btn">Send</button>
-            </div>
+      </div>
+
+      <div class="col-md-7">
+        <h2>whitefield Mudra Phase I</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam. Donec in volutpat nibh. Pellentesque
+          condimentum tortor ac nisi interdum, ac tempor dolor vestibulum.
+          Maecenas lacus massa, luctus et convallis non, dapibus ac enim. Donec
+          at scelerisque libero, ac interdum libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+          dolor sit amet mi tempus aliquam.
+        </p>
+        <div class="row m-0 details-completed">
+          <div class="col-md-3 border-line">
+            <i class="fas fa-building"></i>
+            <p class="ap">Apartments</p>
+            <p class="cr">2,3,4</p>
+          </div>
+          <div class="col-md-3  border-line">
+            <i class="fas fa-rupee-sign"></i>
+            <p class="ap">Starting From</p>
+            <p class="cr">1.2 cr Onwards*</p>
+          </div>
+          <div class="col-md-3  border-line">
+            <i class="fas fa-wrench"></i>
+            <p class="ap">Projects Status</p>
+            <p class="cr">Completed</p>
+          </div>
+          <div class="col-md-3">
+            <i class="fas fa-warehouse"></i>
+            <p class="ap">Rera No</p>
+            <p class="cr tn">TN01/Building20225167</p>
           </div>
         </div>
       </div>
-    </section>
-    <script src="./javascript/mail.js"></script>
-    <script src="./javascript/brochure.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
       function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("mySidenav").style.width = "400px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-      /* Simple appearence with animation AN-1*/
     </script>
   </body>
 </html>
