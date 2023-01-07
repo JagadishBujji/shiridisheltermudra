@@ -207,6 +207,15 @@
         <button class="eq-submit">SUBMIT</button>
       </div>
     </div>
+    <!-- enquiry end -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <!-- modal end -->
     <div class="row m-0 container-fluid news">
       <div class="col-md-4 p-0">
         <div class="heading-myslides">
@@ -342,6 +351,12 @@
         </div>
       </div>
     </div>
+    <script src="/javascript/news.js"></script>
+    <script>
+      window.onload = function (e) {
+        displayModal();
+      };
+    </script>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "400px";
@@ -349,9 +364,8 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-      /* Simple appearence with animation AN-1*/
-    </script>
-    <script>
+
+      //
       let slideIndex = 1;
       showSlides(slideIndex);
 
