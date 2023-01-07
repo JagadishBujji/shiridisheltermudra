@@ -7,6 +7,11 @@
 body {
   font-family: "FedraSansBook";
   height: 100vh;
+  background-image: url(/images/Completed\ Projects_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+
 }
 
 .navbar {
@@ -84,26 +89,33 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  color: #3a833d;
+
+  padding: 12px 14px;
   text-decoration: none;
   display: block;
+  font-size: 14px;
+  width: 100%;
 }
 
-/* .dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
-} */
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
 
 /* The side navigation menu */
 .sidenav {
@@ -365,7 +377,7 @@ body {
   left: 130px;
   bottom: 0;
   right: 0;
-  background-color: #000;
+  background-color: #fff;
   width: 100px;
   height: 2px;
   transform: rotate(90deg);
@@ -442,6 +454,12 @@ body {
   font-size: 26px;
   font-weight: 600;
   color: #0d4f28;
+}
+
+.whitemudra{
+  font-size: 30px;
+  font-weight: 600;
+  color: #03A648;
 }
 
 /* col-md-7 */
