@@ -66,6 +66,22 @@ body {
   height: 100vh;
 }
 
+.landing-img {
+  background-image: url(/images/WhitefieldMudraBrochure01-BG.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+  font-family: "poppins";
+}
+
+.center-logo {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 /* .fade-in-landing {
   animation: fadeInlanding 0.5s;
 }
@@ -1783,7 +1799,7 @@ input:checked:before {
     rgba(11, 108, 75, 1) 14%,
     rgba(7, 86, 54, 1) 68%
   );
-  background-size: 100% 100vh
+  background-size: 100% 100vh;
 }
 /* .single-gallery-carousel-content-box::-webkit-scrollbar {
   
@@ -2379,8 +2395,8 @@ body {
   margin: 0;
 }
 
-.blue {
-  background-image: url(images/Tech\ Specs_erty.jpg);
+.paradise {
+  background-image: url(images/2-2.jpg);
   background-size: 100% 100vh;
   height: 100vh;
   /* -webkit-animation-duration: 5s;
@@ -2392,6 +2408,69 @@ body {
   animation-delay: 3s;
    */
 }
+
+.paradise-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live {
+  margin: 0;
+  color: #be9744;
+  font-size: 22px;
+}
+
+.left {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.right {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.content-paradise {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1;
+  color: #fff;
+  font-family: "CormorantSC-Regular";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.acers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-1 {
+  width: 40px;
+  height: 60px;
+  margin-right: 0px;
+}
+
+.right-1 {
+  width: 40px;
+  height: 60px;
+  margin-left: 0px;
+}
+
+.live-1 {
+  margin: 0;
+  color: #fff;
+  background-color: #be9744;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #be9744;
+  
+}
+
 .white {
   background-image: url(images/Tech\ Specs_erty.jpg);
   background-size: 100% 100vh;
@@ -2751,12 +2830,12 @@ body {
   overflow-y: scroll;
 }
 
-h1,
+/* h1,
 h2,
 p,
 li {
   max-width: 800px;
-}
+} */
 
 header {
   position: fixed;
@@ -2979,14 +3058,98 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-.homes {
-  background-image: url(images/image3-pdf.png);
+/* homes and bhk */
+@font-face {
+  font-family: "ABEAKRG";
+  src: url("Fonts/ABEAKRG.TTF");
+}
+@font-face {
+  font-family: "CormorantSC-Regular";
+  src: url("Fonts/CormorantSC-Regular.otf");
+}
+@font-face {
+  font-family: "CormorantSC-Light";
+  src: url("Fonts/Montserrat-SemiBoldItalic_0.otf");
+}
+
+.homesandbhk {
+  background-image: url(images/2.jpg);
   background-size: 100% 100vh;
   /* width: 100%;
   height: 100vh; */
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.homesbhk {
+  padding-top: 25px;
+}
+
+.shelter-head {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #ad863f;
+  font-family: "CormorantSC-Regular";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.ul-homesandbhk {
+  color: #fff;
+  text-align: justify;
+}
+
+.spa {
+  display: flex;
+  color: #ad863f;
+  justify-content: center;
+  align-items: center;
+}
+.zero {
+  text-align: justify;
+  margin-right: 35px;
+  margin-bottom: 0;
+  font-family: "ABEAKRG";
+  position: relative;
+}
+.zero::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ad863f;
+  right: -27px;
+  bottom: 24px;
+  transform: rotate(90deg);
+}
+
+.with {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.dead {
+  letter-spacing: 1px;
+}
+.resale {
+  text-align: justify;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-family: "ABEAKRG";
+  letter-spacing: 1px;
+}
+
+.cust {
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-top: 15px;
+  color: #fff;
+
+  text-transform: capitalize;
+}
+
+/* homes and bhk end */
 .medavakam {
   background-image: url(images/image4-pdf.png);
   background-size: 100% 100vh;

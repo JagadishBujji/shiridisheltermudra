@@ -1,0 +1,87 @@
+[debug] [2023-01-09T06:04:35.074Z] ----------------------------------------------------------------------
+[debug] [2023-01-09T06:04:35.076Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-01-09T06:04:35.077Z] CLI Version:   11.20.0
+[debug] [2023-01-09T06:04:35.077Z] Platform:      win32
+[debug] [2023-01-09T06:04:35.077Z] Node Version:  v18.12.1
+[debug] [2023-01-09T06:04:35.078Z] Time:          Mon Jan 09 2023 11:34:35 GMT+0530 (India Standard Time)
+[debug] [2023-01-09T06:04:35.078Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-09T06:04:35.200Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-09T06:04:35.200Z] > authorizing via signed-in user (jagadish00198@gmail.com)
+[debug] [2023-01-09T06:04:35.200Z] [iam] checking project shiridishelters-31410 for permissions ["firebase.projects.get"]
+[debug] [2023-01-09T06:04:35.202Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions [none]
+[debug] [2023-01-09T06:04:35.203Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions x-goog-quota-user=projects/shiridishelters-31410
+[debug] [2023-01-09T06:04:35.203Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-09T06:04:36.574Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions 200
+[debug] [2023-01-09T06:04:36.574Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions {}
+[debug] [2023-01-09T06:04:36.575Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project shiridishelters-31410:
+
+  firebase.projects.get
+[debug] [2023-01-09T06:04:36.576Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 [none]
+[debug] [2023-01-09T06:04:37.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 403
+[debug] [2023-01-09T06:04:37.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-09T06:04:37.026Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-09T06:04:37.126Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project shiridishelters-31410. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-01-09T06:05:11.245Z] ----------------------------------------------------------------------
+[debug] [2023-01-09T06:05:11.246Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-01-09T06:05:11.247Z] CLI Version:   11.20.0
+[debug] [2023-01-09T06:05:11.247Z] Platform:      win32
+[debug] [2023-01-09T06:05:11.247Z] Node Version:  v18.12.1
+[debug] [2023-01-09T06:05:11.248Z] Time:          Mon Jan 09 2023 11:35:11 GMT+0530 (India Standard Time)
+[debug] [2023-01-09T06:05:11.249Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-09T06:05:11.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-09T06:05:11.356Z] > authorizing via signed-in user (jagadish00198@gmail.com)
+[debug] [2023-01-09T06:05:11.357Z] [iam] checking project shiridishelters-31410 for permissions ["firebase.projects.get"]
+[debug] [2023-01-09T06:05:11.364Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions [none]
+[debug] [2023-01-09T06:05:11.364Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions x-goog-quota-user=projects/shiridishelters-31410
+[debug] [2023-01-09T06:05:11.364Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-09T06:05:12.765Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions 200
+[debug] [2023-01-09T06:05:12.765Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions {}
+[debug] [2023-01-09T06:05:12.766Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project shiridishelters-31410:
+
+  firebase.projects.get
+[debug] [2023-01-09T06:05:12.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 [none]
+[debug] [2023-01-09T06:05:13.127Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 403
+[debug] [2023-01-09T06:05:13.127Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-09T06:05:13.128Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-09T06:05:13.234Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project shiridishelters-31410. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-01-09T06:06:06.683Z] ----------------------------------------------------------------------
+[debug] [2023-01-09T06:06:06.685Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-01-09T06:06:06.686Z] CLI Version:   11.20.0
+[debug] [2023-01-09T06:06:06.686Z] Platform:      win32
+[debug] [2023-01-09T06:06:06.686Z] Node Version:  v18.12.1
+[debug] [2023-01-09T06:06:06.687Z] Time:          Mon Jan 09 2023 11:36:06 GMT+0530 (India Standard Time)
+[debug] [2023-01-09T06:06:06.688Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-09T06:06:06.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-09T06:06:06.802Z] > authorizing via signed-in user (jagadish00198@gmail.com)
+[debug] [2023-01-09T06:06:06.802Z] [iam] checking project shiridishelters-31410 for permissions ["firebase.projects.get"]
+[debug] [2023-01-09T06:06:06.804Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions [none]
+[debug] [2023-01-09T06:06:06.804Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions x-goog-quota-user=projects/shiridishelters-31410
+[debug] [2023-01-09T06:06:06.804Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-09T06:06:08.163Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions 200
+[debug] [2023-01-09T06:06:08.164Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridishelters-31410:testIamPermissions {}
+[debug] [2023-01-09T06:06:08.164Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project shiridishelters-31410:
+
+  firebase.projects.get
+[debug] [2023-01-09T06:06:08.165Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 [none]
+[debug] [2023-01-09T06:06:08.523Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 403
+[debug] [2023-01-09T06:06:08.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shiridishelters-31410 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-01-09T06:06:08.524Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-01-09T06:06:08.628Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project shiridishelters-31410. Please make sure the project exists and your account has permission to access it.
