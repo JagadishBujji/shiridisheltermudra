@@ -2025,7 +2025,72 @@ input:checked:before {
 .fade-in-image {
   animation: fadeIn 1s;
 }
-
+@font-face {
+  font-family: "Akrobat-ExtraBold";
+  src: url("Fonts/Akrobat-ExtraBold.otf");
+}
+.concreteLeft{
+  background-image: url(images/concrete1.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+  width: 100%;
+}
+.concreteRight{
+  background-image: url(images/concrete2.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+  width: 100%;
+}
+.concreteHeading{
+  padding-top: 85px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #FEFEFF;
+  font-family: "Akrobat-ExtraBold";
+}
+.concreteinner1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.concreteinner1 h4{
+  color: #FCFCFD;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.concreteinner1 p{
+  color:#FCFCFD;
+  font-size: 12px;
+}
+.concreteinner2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.concreteinner2 h4{
+  color: #FCFCFD;
+  font-weight: bold;
+  font-size: 15px;
+}
+.concreteinner2 p{
+  color:#FCFCFD;
+  font-size: 12px;
+}
+.concreteBottom{
+  padding-right: 30px;
+}
+.concreteBottom h3{
+  margin-top: 45px;
+  padding-right: 300px;
+  color:#FCFCFD;
+  font-size: 28px;
+  font-family: "Costyle-p7lwv";
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -2045,7 +2110,7 @@ input:checked:before {
 .main-slider {
   width: 100%;
   height: 100vh;
-  background-color: antiquewhite;
+  background-color: #faebd7;
   position: relative;
 }
 .slider-imagenes {
@@ -2778,17 +2843,21 @@ input[type="range"]:focus::-ms-fill-upper {
 .topview{
     position: absolute;
     right: 72px;
-    bottom: 9px;
+    bottom: 6px;
 }
 .topview1{
   color: #FEFEFD;
   font-size: 24px;
   text-align: left;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-family: "CormorantSC-Regular";
 }
 .topview2{
   color: #A38F5D;
   font-size: 36px;
   text-align: left;
+  font-family: "Costyle-p7lwv";
 }
 .gray {
   background-image: url(images/Tech\ Specs_Car\ Plan.jpg);
