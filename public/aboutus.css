@@ -649,3 +649,13 @@ body {
   transition: 0.6s all ease-in-out;
   transform: translateX(0);
 }
+
+.aboutEnd{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 302px;
+}
+.aboutEnd span{
+  font-size: 16px;
+}
