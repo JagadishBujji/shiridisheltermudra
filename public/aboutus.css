@@ -405,7 +405,7 @@ body {
   transform: translateX(100%);
   transition: 0.6s all ease-in-out;
   background: #0e863f;
-  padding: 80px;
+  padding: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -608,7 +608,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   width: 16px;
-  fill: #5d5d5d;
+  fill: #03A647;
 }
 
 .carousel__arrow {
@@ -650,12 +650,27 @@ body {
   transform: translateX(0);
 }
 
-.aboutEnd{
+.aboutEnd {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 302px;
 }
-.aboutEnd span{
+.aboutEnd span {
   font-size: 16px;
+}
+
+.spa {
+  position: relative;
+  margin-left: -15px;
+}
+.spa::after {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  content: "";
+  background: #fff;
+  top: 24px;
+  transform: rotate(90deg);
+  right: -29px;
 }

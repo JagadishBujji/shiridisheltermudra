@@ -67,7 +67,7 @@ body {
 }
 
 .landing-img {
-  background-image: url(/images/WhitefieldMudraBrochure01-BG.jpg);
+  background-image: url(/images/WhitefieldMudraBrochure01-BG.png);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -79,6 +79,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-top: 100px;
 }
 
 /* .fade-in-landing {
@@ -2029,65 +2030,65 @@ input:checked:before {
   font-family: "Akrobat-ExtraBold";
   src: url("Fonts/Akrobat-ExtraBold.otf");
 }
-.concreteLeft{
+.concreteLeft {
   background-image: url(images/concrete1.jpg);
   background-size: 100% 100vh;
   height: 100vh;
   width: 100%;
 }
-.concreteRight{
+.concreteRight {
   background-image: url(images/concrete2.jpg);
   background-size: 100% 100vh;
   height: 100vh;
   width: 100%;
 }
-.concreteHeading{
+.concreteHeading {
   /* padding-top: 85px; */
   text-align: center;
   letter-spacing: 2px;
   font-size: 26px;
   font-weight: bold;
-  color: #FEFEFF;
+  color: #fefeff;
   font-family: "Akrobat-ExtraBold";
 }
-.concreteinner1{
+.concreteinner1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
 }
-.concreteinner1 h4{
-  color: #FCFCFD;
+.concreteinner1 h4 {
+  color: #fcfcfd;
   font-weight: bold;
   padding-top: 10px;
   font-size: 15px;
 }
-.concreteinner1 p{
-  color:#FCFCFD;
+.concreteinner1 p {
+  color: #fcfcfd;
   font-size: 12px;
 }
-.concreteinner2{
+.concreteinner2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.concreteinner2 h4{
-  color: #FCFCFD;
+.concreteinner2 h4 {
+  color: #fcfcfd;
   font-weight: bold;
   font-size: 15px;
 }
-.concreteinner2 p{
-  color:#FCFCFD;
+.concreteinner2 p {
+  color: #fcfcfd;
   font-size: 12px;
 }
-.concreteBottom{
+.concreteBottom {
   padding-right: 30px;
 }
-.concreteBottom h3{
+.concreteBottom h3 {
   margin-top: 45px;
   padding-right: 300px;
-  color:#FCFCFD;
+  color: #fcfcfd;
   font-size: 28px;
   font-family: "Costyle-p7lwv";
 }
@@ -2840,21 +2841,21 @@ input[type="range"]:focus::-ms-fill-upper {
   -moz-animation-delay: 3s;
   animation-delay: 3s; */
 }
-.topview{
-    position: absolute;
-    right: 72px;
-    bottom: 6px;
+.topview {
+  position: absolute;
+  right: 72px;
+  bottom: 6px;
 }
-.topview1{
-  color: #FEFEFD;
+.topview1 {
+  color: #fefefd;
   font-size: 24px;
   text-align: left;
   padding: 5px;
   margin-bottom: 20px;
   font-family: "CormorantSC-Regular";
 }
-.topview2{
-  color: #A38F5D;
+.topview2 {
+  color: #a38f5d;
   font-size: 36px;
   text-align: left;
   font-family: "Costyle-p7lwv";
@@ -3579,27 +3580,26 @@ img {
   height: 100vh;
 }
 
-.smartlocks{
+.smartlocks {
   background: url(/images/doorslocks-1.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
 
-
-.elephant{
+.elephant {
   background: url(/images/doorsele.jpg);
   background-size: 100% 100vh;
-  height: 100vh; 
+  height: 100vh;
 }
 
-.Bathroom{
+.Bathroom {
   background: url(/images/bath.jpg);
   background-size: 100% 100vh;
-  height: 100vh; 
+  height: 100vh;
 }
 
-.sink1{
+.sink1 {
   background: url(/images/sink1.jpg);
   background-size: 100% 100vh;
-  height: 100vh; 
+  height: 100vh;
 }
