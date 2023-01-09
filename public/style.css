@@ -2042,7 +2042,7 @@ input:checked:before {
   width: 100%;
 }
 .concreteHeading{
-  padding-top: 85px;
+  /* padding-top: 85px; */
   text-align: center;
   letter-spacing: 2px;
   font-size: 26px;
@@ -3586,6 +3586,18 @@ img {
 
 .elephant{
   background: url(/images/doorsele.jpg);
+  background-size: 100% 100vh;
+  height: 100vh; 
+}
+
+.Bathroom{
+  background: url(/images/bath.jpg);
+  background-size: 100% 100vh;
+  height: 100vh; 
+}
+
+.sink1{
+  background: url(/images/sink1.jpg);
   background-size: 100% 100vh;
   height: 100vh; 
 }
