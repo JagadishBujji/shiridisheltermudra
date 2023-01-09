@@ -3113,7 +3113,7 @@ img {
 /* ------------ */
 
 .safety {
-  background-image: url(images/image1-pdf.png);
+  background-image: url(images/safetyandsecu.jpg);
   background-size: 100% 100vh;
   /* width: 100%;
   height: 100vh; */
@@ -3128,8 +3128,9 @@ img {
   background-repeat: no-repeat;
 }
 .location {
-  background-image: url(images/image7-pdf.png);
+  background-image: url(images/location.jpg);
   background-size: 100% 100vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -3572,13 +3573,13 @@ img {
 }
 
 .lightled {
-  background: url(/images/light-1.jpg);
+  background: url(/images/light-2.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
 
 .smartlocks{
-  background: url(/images/smartlocks.jpg);
+  background: url(/images/doorslocks-1.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }

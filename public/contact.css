@@ -144,7 +144,7 @@ body {
 
 .contact2 {
   width: 100%;
-  background-color: #0b1c4c;
+  background-color: #414141;
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ body {
   padding: 16px;
   text-align: center;
   color: #fff;
-  background-color: #072968;
+  background-color: #02A647;
 }
 .contact-card2 {
   max-width: 75%;
@@ -187,7 +187,7 @@ body {
   padding: 16px;
   text-align: center;
   color: #fff;
-  background-color: #072968;
+  background-color: #02A647;
 }
 
 .contact-card3 {
@@ -197,7 +197,7 @@ body {
   padding: 16px;
   text-align: center;
   color: #fff;
-  background-color: #072968;
+  background-color: #02A647;
 }
 .contact-heading {
   font-size: 16px;
@@ -238,7 +238,7 @@ body {
   content: "";
   width: 40px;
   height: 2px;
-  background: #c7c5a9;
+  background: #FFDC60;
   bottom: -4px;
 }
 
@@ -275,7 +275,7 @@ body {
 .get {
   width: 100%;
   text-align: center;
-  color: yellow;
+  color: #A4EE3F;
   position: absolute;
   top: 80px;
   display: flex;
@@ -288,7 +288,7 @@ body {
   font: 12px;
   text-align: left;
   padding-left: 30px;
-  color: #ccb880;
+  color: #40413F;
   margin: auto;
 }
 
@@ -351,7 +351,7 @@ input[type="submit"] {
 }
 
 .contact-submit {
-  background: #0079ff;
+  background: #A4EE3F;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
