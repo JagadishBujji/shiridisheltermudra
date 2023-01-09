@@ -2042,7 +2042,7 @@ input:checked:before {
   width: 100%;
 }
 .concreteHeading{
-  padding-top: 85px;
+  /* padding-top: 85px; */
   text-align: center;
   letter-spacing: 2px;
   font-size: 26px;
@@ -3394,7 +3394,7 @@ img {
 /* bricks carosule ima -1 */
 
 .bricks {
-  background: url(/images/5.jpg);
+  background: url(/images/5-4.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -3430,10 +3430,16 @@ img {
 
 /* window img - 2 */
 
+@font-face {
+  font-family: "HelveticaNeue-Bold";
+  src: url("Fonts/HelveticaNeue-Bold.otf");
+}
+
 .baywindow {
   background: url(/images/6.png);
   background-size: 100% 100vh;
   height: 100vh;
+  position: relative;
 }
 
 .first-baywindow {
@@ -3441,6 +3447,7 @@ img {
   padding-left: 100px;
   padding-top: 40px;
   color: #fff;
+  position: relative;
 }
 
 .bay {
@@ -3460,4 +3467,137 @@ img {
   text-align: center;
   font-family: "CormorantSC-Regular";
 }
+
+.adm {
+  color: #fff;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Bold";
+}
+
+.geo {
+  color: #5b4c46;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Bold";
+}
+
+.made {
+  font-family: "Costyle-p7lwv";
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.huge {
+  font-family: "Costyle-p7lwv";
+  font-size: 30px;
+  position: absolute;
+  left: 180px;
+}
 /*  */
+
+/* solar-heat  */
+
+@font-face {
+  font-family: "Montserrat-Thin_0";
+  src: url("Fonts/Montserrat-Thin_0.otf");
+}
+
+.solar-heat {
+  background: url(/images/6-3.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+.heat {
+  padding: 30px;
+}
+
+.solar {
+  color: #fff;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Akrobat-Regular";
+}
+
+.gas {
+  color: #fff;
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Montserrat-Thin_0";
+}
+
+.future {
+  margin-top: 30px;
+  text-align: left;
+  padding: 30px;
+  color: #fff;
+  font-family: "Costyle-p7lwv";
+  font-size: 35px;
+}
+
+/* solar-heat */
+
+.electric {
+  background: url(/images/8-2.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+.overall-ele {
+  padding: 60px;
+  color: #fff;
+}
+
+.heading-electric {
+  text-align: end;
+  padding: 30px;
+  font-family: "CormorantSC-Regular";
+}
+
+.ev,
+.pb {
+  font-size: 22px;
+}
+
+.fu,
+.elee {
+  font-family: "Costyle-p7lwv";
+  font-size: 40px;
+}
+
+.an,
+.envir {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: "CormorantSC-Regular";
+}
+
+.lightled {
+  background: url(/images/light-1.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+.smartlocks{
+  background: url(/images/smartlocks.jpg);
+  background-size: 100% 100vh;
+  height: 100vh;
+}
+
+
+.elephant{
+  background: url(/images/doorsele.jpg);
+  background-size: 100% 100vh;
+  height: 100vh; 
+}
+
+.Bathroom{
+  background: url(/images/bath.jpg);
+  background-size: 100% 100vh;
+  height: 100vh; 
+}
+
+.sink1{
+  background: url(/images/sink1.jpg);
+  background-size: 100% 100vh;
+  height: 100vh; 
+}
