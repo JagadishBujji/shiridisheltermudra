@@ -3606,26 +3606,25 @@ img {
   height: 100vh;
 }
 /* Maps */
-@media (min-width: 1024px) {
-  /* big landscape tablets, laptops, and desktops */
-  .maps-main {
-    position: relative;
-    margin: 0;
-  }
-  .mapSub {
-    text-align: left;
-    padding: 4px;
-    font-size: 18px;
-    color: yellow;
-  }
-  .mapssubcontent {
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-  }
-  .mySlides1 {
-    display: none;
-  }
+@media (min-width:1024px) { /* big landscape tablets, laptops, and desktops */ 
+.maps-main {
+  position: relative;
+  margin: 0;
+}
+.mapSub {
+  text-align: left;
+  padding: 4px;
+  font-size: 18px;
+  color: yellow;
+}
+.mapssubcontent{
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.mySlides1 {
+  display: none;
+}
 
   /* Add a pointer when hovering over the thumbnail images */
   .cursor1 {
