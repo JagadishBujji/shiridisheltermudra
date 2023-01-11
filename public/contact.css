@@ -542,3 +542,8 @@ input[type="submit"] {
   margin: 0;
   font-weight: 600;
 }
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
