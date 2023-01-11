@@ -2437,6 +2437,14 @@ body {
   font-family: "FedraSansBook";
   src: url("fedra-sans-book_nANwg/Fedra\ Sans\ Book/");
 }
+@font-face {
+  font-family: "FedraSansBook";
+  src: url("fedra-sans-book_nANwg/Fedra\ Sans\ Book/");
+}
+@font-face {
+  font-family: "CormorantSC-Regular";
+  src: url("Fonts/CormorantSC-Regular.otf");
+}
 
 /* .panel h1 {
   font-size: 1.8em;
@@ -2495,6 +2503,8 @@ body {
   margin: 0;
   color: #be9744;
   font-size: 22px;
+  font-family: "CormorantSC-Regular";
+  font-weight: 600;
 }
 
 .left {
@@ -3022,7 +3032,7 @@ header {
   background: #398239;
 }
 .gallery_main {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   display: grid;
   grid-gap: 5px;
   grid-template-areas:
@@ -3249,12 +3259,48 @@ img {
 
 /* homes and bhk end */
 .medavakam {
-  background-image: url(images/image4-pdf.png);
+  background-image: url(images/New\ Project.png);
   background-size: 100% 100vh;
-  /* width: 100%;
-  height: 100vh; */
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.about-row {
+  padding: 0 70px;
+}
+
+.icon-meda {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.about-column {
+  margin-bottom: 20px;
+  /* position: relative; */
+}
+/* .about-column::after {
+  position: absolute;
+  content: "";
+  background: url(/images/dottedline.png);
+  width: 100%;
+  height: 20px;
+} */
+
+.about-content {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.cop {
+  font-family: "CormorantSC-Regular";
+  font-size: 26px;
+  text-align: left;
+  margin-bottom: 0;
+  padding-left: 115px;
+  font-weight: 600;
 }
 /* plan swap */
 .tab {
@@ -3606,25 +3652,26 @@ img {
   height: 100vh;
 }
 /* Maps */
-@media (min-width:1024px) { /* big landscape tablets, laptops, and desktops */ 
-.maps-main {
-  position: relative;
-  margin: 0;
-}
-.mapSub {
-  text-align: left;
-  padding: 4px;
-  font-size: 18px;
-  color: yellow;
-}
-.mapssubcontent{
-  text-align: center;
-  font-size: 20px;
-  color: #fff;
-}
-.mySlides1 {
-  display: none;
-}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  .maps-main {
+    position: relative;
+    margin: 0;
+  }
+  .mapSub {
+    text-align: left;
+    padding: 4px;
+    font-size: 18px;
+    color: yellow;
+  }
+  .mapssubcontent {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+  }
+  .mySlides1 {
+    display: none;
+  }
 
   /* Add a pointer when hovering over the thumbnail images */
   .cursor1 {
