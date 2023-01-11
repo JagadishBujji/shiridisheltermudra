@@ -3604,6 +3604,7 @@ img {
   height: 100vh;
 }
 /* Maps */
+@media (min-width:1281px) { /* big landscape tablets, laptops, and desktops */ 
 .maps-main {
   position: relative;
   margin: 0;
@@ -3724,4 +3725,4 @@ img {
    bottom: 0;
    left: 0;
  }
- 
+}
