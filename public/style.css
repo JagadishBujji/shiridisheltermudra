@@ -1917,6 +1917,7 @@ input:checked:before {
   position: relative;
   width: 100%;
   height: 100vh;
+  margin-bottom: 25px;
 }
 
 .carousel-indicators {
@@ -3336,6 +3337,10 @@ img {
   margin: 13px 27px;
 }
 
+.tabcontent1 img {
+  width: 90%;
+  height: 100vh;
+}
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #a4ee3f;
@@ -3364,7 +3369,6 @@ img {
   width: 70%;
   border-left: none;
   height: 100vh;
-  padding-top: 100px;
 }
 
 /* horizontal swiper */
@@ -3687,7 +3691,7 @@ img {
   .next1 {
     cursor: pointer;
     position: absolute;
-    top: 85%;
+    top: 75%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -3707,12 +3711,13 @@ img {
   }
   /* Position the "next button" to the right */
   .next1 {
-    right: 40px;
+    right: 26%;
     border-radius: 3px 0 0 3px;
     color: #c7ca2a;
   }
   .prev1 {
-    left: 36px;
+    left: 25%;
+
     color: #c7ca2a;
   }
   /* On hover, add a black background color with a little bit see-through */
@@ -3722,6 +3727,9 @@ img {
 } */
 
   .mapsInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     max-width: 300px;
     padding-top: 15px;
@@ -3774,7 +3782,50 @@ img {
     bottom: 0;
     left: 0;
   }
-}
+
+
+
+  /* Six columns side by side */
+  .mapsLeft {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo1 {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo1:hover {
+    opacity: 1;
+  }
+  .mapBig {
+    width: 90% !important;
+    height: 88vh !important;
+    border: 2px solid #7ed9b5;
+    border-radius: 10px;
+  }
+  .mapsText {
+    text-align: left;
+    color: #fff;
+    font-weight: 800;
+    font-size: 32px;
+  }
+  #caption1 {
+    color: #c7ca2a;
+    position: relative;
+  }
+  #caption1::after {
+    display: block;
+    content: "";
+    width: 10%;
+    height: 2px;
+    background: #c7ca2a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
 .hidden {
   opacity: 0;
@@ -3786,4 +3837,5 @@ img {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
 }
