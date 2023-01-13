@@ -383,20 +383,6 @@ body::-webkit-scrollbar {
   right: 0;
 }
 
-@media screen and (max-width: 450px) {
-  #landingImgMain {
-    content: url(/images/bluelanding1.png);
-    width: 100%;
-    height: 100vh;
-  }
-
-
-  #landingImg {
-    content: url(/images/landing-mobile.jpg);
-    width: 100%;
-    height: 100vh;
-  }
-}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -3851,5 +3837,114 @@ img {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #landingImgMain {
+    content: url(/images/bluelanding1.png);
+    width: 100%;
+    height: 100vh;
+  }
+
+  #landingImg {
+    content: url(/images/landing-mobile.jpg);
+  }
+
+  #night {
+    content: url(/images/night-img-mobile.jpg);
+  }
+  #day {
+    content: url(/images/day-img-mobile.jpg);
+  }
+  .homesbhk {
+    height: 100vh;
+    padding-top: 10px;
+  }
+  .shelter-head {
+    font-size: 17px;
+    margin-left: 0;
+  }
+  .ul-homesandbhk {
+    padding: 0 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .zero {
+    font-size: 10px;
+  }
+  .resale {
+    font-size: 9px;
+    font-weight: 600;
+  }
+  .with {
+    font-size: 6px;
+  }
+  .zero::before {
+    bottom: 15px;
+  }
+  .dead {
+    font-weight: 600;
+  }
+  .cust {
+    font-size: 12px;
+  }
+  .left {
+    width: 40px;
+    height: 40px;
+  }
+  .live {
+    font-size: 16px;
+  }
+  .right {
+    width: 40px;
+    height: 40px;
+  }
+  .content-paradise {
+    font-size: 10px;
+  }
+  .live-1 {
+    font-size: 8px;
+  }
+  .left-1 {
+    width: 30px;
+    height: 42px;
+  }
+  .right-1 {
+    width: 30px;
+    height: 42px;
+  }
+  .topview {
+    right: 10px;
+    bottom: 6px;
+  }
+  .topview1 {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .topview2 {
+    font-size: 12px;
+    text-align: right;
+  }
+  .about-row {
+    padding: 0;
+  }
+  .icon-meda {
+    width: 30px;
+    height: 30px;
+  }
+  .about-content {
+    font-size: 6px;
+  }
+  .cop {
+    font-size: 16px;
+    padding: 0;
+  }
+  .about-column {
+    margin-bottom: 10px;
+  }
+  .meda {
+    height: 100vh;
   }
 }
