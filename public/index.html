@@ -205,6 +205,42 @@
         </button>
       </div>
     </div>
+    <!-- mobile navbar  -->
+    <div class="mobnavbar" id="mob-navbar">
+    <ul class="nav-mob">
+      <li class="navmob-item">
+        <a href="" class="icon-mob">
+          <i class="fa-solid fa-house-user"></i>
+         <p class="menu">Home</p>
+       </a>
+      </li>
+      <li class="navmob-item">
+        <a href="" class="icon-mob">
+          <i class="fa-solid fa-circle-info"></i>
+          <p class="menu">About</p>
+        </a>
+      </li>
+      <li class="">
+        <a href="" class="icon-mob">
+          <img class="mob-logo" src="images/Logo-mobile.png" alt=""
+            />
+        </a>
+      </li>
+      <li class="navmob-item">
+        <a href="" class="icon-mob">
+          <i class="fa-solid fa-phone"></i>
+          <p class="menu">Contact</p>
+        </a>
+      </li>
+      <li class="navmob-item">
+        <a href="" class="icon-mob">
+          <i class="fa-solid fa-bars"></i>
+          <p class="menu">Menu</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <!--mobile navbar  -->
     <!-- end of navbar -->
     <!-- Swiper -->
     <div class="swiper mySwiper">
@@ -324,7 +360,7 @@
           </div>
           <!-- live in pardise -->
         </div>
-        <div class="swiper-slide dark">
+        <div class="swiper-slide dark" id="dark">
           <div class="topview hidden">
             <h4 class="topview1">A LIFESTYLE THAT SMOOTH YOUR MIND.</h4>
             <h3 class="topview2">Warms The Heart & Please The Soul</h3>
@@ -442,7 +478,7 @@
             <p class="cop">Medavakkam-Tambaram Corporation</p>
           </div>
         </div>
-        <div class="swiper-slide green">
+        <div class="swiper-slide green" id="green">
           <!-- basketball court -->
         </div>
 
@@ -571,7 +607,7 @@
               </li> -->
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active fade-in-image bricks">
+              <div class="carousel-item active fade-in-image bricks" id="bricks">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/5.jpg"
@@ -726,7 +762,7 @@
                   <div class="col-md-7"></div>
                 </div>
               </div>
-              <div class="carousel-item fade-in-image electric">
+              <div class="carousel-item fade-in-image electric" id="electric">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/Electric.jpg"
@@ -759,28 +795,28 @@
                   alt="Third slide"
                 />
               </div>
-              <div class="carousel-item fade-in-image lightled">
+              <div class="carousel-item fade-in-image lightled" id="lightled">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/Techlight.jpg"
                   alt="Third slide"
                 /> -->
               </div>
-              <div class="carousel-item fade-in-image smartlocks">
+              <div class="carousel-item fade-in-image smartlocks" id="smartlocks">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/image13-pdf.png"
                   alt="Third slide"
                 /> -->
               </div>
-              <div class="carousel-item fade-in-image elephant">
+              <div class="carousel-item fade-in-image elephant" id="elephant">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/Doors.jpg"
                   alt="Third slide"
                 /> -->
               </div>
-              <div class="carousel-item fade-in-image Bathroom">
+              <div class="carousel-item fade-in-image Bathroom" id="Bathroom">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/image14-pdf.png"
@@ -801,7 +837,7 @@
                   alt="Third slide"
                 />
               </div>
-              <div class="carousel-item fade-in-image sink1">
+              <div class="carousel-item fade-in-image sink1" id="sink1">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/QuartzSink.png"
@@ -830,8 +866,9 @@
           </div>
         </div>
         <!-- <div class="swiper-slide mudra"></div> -->
-        <div class="swiper-slide safety"></div>
+        <div class="swiper-slide safety" id="safety"></div>
         <div class="swiper-slide">
+          
           <div class="tab">
             <div class="tabHead">
               <h4>Plans</h4>
@@ -1156,7 +1193,7 @@
         </div>
         <div class="swiper-slide specs"></div>
         <div class="swiper-slide embracing"></div>
-        <div class="swiper-slide location"></div>
+        <div class="swiper-slide location " id="location"></div>
         
         <!-- <div class="swiper-slide modalflat"></div> -->
         <!-- <div class="swiper-slide safety"></div>
@@ -1492,6 +1529,32 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+    <script>
+      const width = screen.width;
+      console.log('media query: ', width);
+      // landingImage
+      const landingImg1 = document.getElementById("landingImg");
+      const landingImgMain1 = document.getElementById("landingImgMain");
+      const dark = document.getElementById("dark");
+
+      setTimeout(() => {
+        landingImgMain1.style.opacity = 0;
+        landingImg1.style.opacity = 1;
+      }, 3000);
+
+      var navbar1 = document.getElementById("navbar");
+      var mobNavbar = document.getElementById("mob-navbar");
+      if(width < 450) {
+        console.log('inside');
+        landingImg1.src = '/images/landing-mobile.jpg';
+        dark.style.backgroundImage = "url(/images/topview-mobile.png)";
+        navbar1.style.display= "none";
+        // console.log('test: ', landingImgMain1.src);
+      } else {
+        // navbar1.style.display= "block";
+        mobNavbar.style.display= "none";
       }
     </script>
   </body>

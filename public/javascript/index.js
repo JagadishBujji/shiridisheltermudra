@@ -143,12 +143,3 @@ function imageAnimations(type) {
 }
 
 // maps
-
-// landingImage
-const landingImage = document.getElementById("landingImg");
-const landingImageMain = document.getElementById("landingImgMain");
-
-setTimeout(() => {
-  landingImageMain.style.opacity = 0;
-  landingImage.style.opacity = 1;
-}, 3000);
