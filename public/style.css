@@ -382,6 +382,14 @@ body::-webkit-scrollbar {
 .sidenav {
   right: 0;
 }
+
+@media screen and (max-width: 450px) {
+  #landingImg {
+    content: url(/images/landing-mobile.jpg);
+    width: 100%;
+    height: 100vh;
+  }
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -1917,7 +1925,7 @@ input:checked:before {
   position: relative;
   width: 100%;
   height: 100vh;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .carousel-indicators {
@@ -3783,8 +3791,6 @@ img {
     left: 0;
   }
 
-
-
   /* Six columns side by side */
   .mapsLeft {
     float: left;
@@ -3827,15 +3833,15 @@ img {
     left: 0;
   }
 
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(100%);
-  transition: all 1s;
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
