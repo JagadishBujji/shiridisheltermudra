@@ -67,7 +67,7 @@ body {
 }
 
 .landing-img {
-  background-image: url(/images/WhitefieldMudraBrochure01-BG.png);
+  background-image: url(images/WhitefieldMudraBrochure01-BG.png);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -320,7 +320,7 @@ body::-webkit-scrollbar {
 /* home page starts roll 2*/
 
 .home-page {
-  background-image: url(/images/Baggr_Work.jpg);
+  background-image: url(images/Baggr_Work.jpg);
   background-size: 100% 100vh;
   /* width: 100%; */
   height: 100vh;
@@ -1347,7 +1347,7 @@ input[type="range"]:focus::-ms-fill-upper {
   align-items: center;
 }
 .daynit {
-  background-image: url(/images/Day_1.jpg);
+  background-image: url(images/Day_1.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -1612,7 +1612,7 @@ input:checked + .slider:before {
 /* end daynit */
 /* footer */
 .footer {
-  background-image: url(/images/footerimg.jpg);
+  background-image: url(images/footerimg.jpg);
   background-size: cover;
   width: 100%;
   height: 50vh;
@@ -3449,7 +3449,7 @@ img {
 /* bricks carosule ima -1 */
 
 .bricks {
-  background: url(/images/5-4.jpg);
+  background: url(images/5-4.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -3557,7 +3557,7 @@ img {
 }
 
 .solar-heat {
-  background: url(/images/6-3.jpg);
+  background: url(images/6-3.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -3592,7 +3592,7 @@ img {
 /* solar-heat */
 
 .electric {
-  background: url(/images/8-2.jpg);
+  background: url(images/8-2.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -3627,31 +3627,31 @@ img {
 }
 
 .lightled {
-  background: url(/images/light-2.jpg);
+  background: url(images/light-2.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
 
 .smartlocks {
-  background: url(/images/doorslocks-1.jpg);
+  background: url(images/doorslocks-1.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
 
 .elephant {
-  background: url(/images/doorsele.jpg);
+  background: url(images/doorsele.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
 
 .Bathroom {
-  background: url(/images/bath.jpg);
+  background: url(images/bath.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
 
 .sink1 {
-  background: url(/images/sink1.jpg);
+  background: url(images/sink1.jpg);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -3840,7 +3840,7 @@ img {
 
 @media screen and (max-width: 450px) {
   #landingImgMain {
-    content: url(/images/bluelanding1.png);
+    content: url(images/bluelanding1.png);
   }
 
   /* #landingImg {
@@ -3848,40 +3848,40 @@ img {
   } */
 
   #night {
-    content: url(/images/night-img-mobile.jpg);
+    content: url(images/night-img-mobile.jpg);
   }
   #day {
-    content: url(/images/day-img-mobile.jpg);
+    content: url(images/day-img-mobile.jpg);
   }
   #safety {
-    content: url(/images/saftey-mobile.jpg);
+    content: url(images/saftey-mobile.jpg);
   }
 
   .location {
-    content: url(/images/location-mobile.jpg);
+    content: url(images/location-mobile.jpg);
   }
 
   #lightled {
-    content: url(/images/led-mobile.jpg);
+    content: url(images/led-mobile.jpg);
   }
 
   #smartlocks {
-    content: url(/images/smart-mobile.jpg);
+    content: url(images/smart-mobile.jpg);
   }
 
   #elephant {
-    content: url(/images/doors-mobile.jpg);
+    content: url(images/doors-mobile.jpg);
   }
   #Bathroom {
-    content: url(/images/bathroom-mobile.jpg);
+    content: url(images/bathroom-mobile.jpg);
   }
 
   #sink1 {
-    content: url(/images/sink-mobile.jpg);
+    content: url(images/sink-mobile.jpg);
   }
 
   #green {
-    content: url(/images/basketballcourt-mobile.png);
+    content: url(images/basketballcourt-mobile.png);
   }
 
   /* #dark {
@@ -4061,3 +4061,88 @@ img {
     font-size: 16px;
   }
 }
+
+/* slider */
+html {
+  --sliderTransX: 0px;
+}
+.tags-slider-container {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+.outer {
+  width: 800px;
+  overflow-x: hidden;
+}
+.tags-track {
+  width: max-content;
+  transform: translateX(var(--sliderTransX));
+  transition: transform 0.3s ease;
+}
+.tags-track a.tag {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgb(187, 187, 187);
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+.tags-track a.tag.active {
+  background-color: rgb(0, 137, 250);
+  color: rgb(247, 247, 247);
+  border-color: rgb(0, 137, 250);
+}
+.tags-track a.tag:not(.active):hover {
+  background-color: rgb(211, 227, 240);
+}
+:is(#btn-prev, #btn-next) {
+  position: absolute;
+  z-index: 10;
+  border: 1px solid lightgray;
+  outline: none;
+  height: 100%;
+  padding: 6px 10px;
+  border-radius: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+:is(#btn-prev, #btn-next):hover {
+  background-color: rgb(221, 221, 221);
+}
+:is(#btn-prev, #btn-next):active {
+  background-color: rgb(196, 196, 196);
+}
+button#btn-prev {
+  left: -20px;
+}
+button#btn-next {
+  right: -20px;
+}
+/* Setting the left and right overlays */
+:is(.left-overlay, .right-overlay) {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100px;
+  top: 0;
+}
+.left-overlay {
+  background: linear-gradient(to right, white, rgb(255, 255, 255, 0));
+  left: 0;
+}
+.right-overlay {
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+  right: 0;
+}
+/* The hide class  */
+.hide {
+  display: none;
+}
+/* slider */

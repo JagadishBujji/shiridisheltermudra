@@ -457,7 +457,7 @@ body {
 }
 
 .carousel-item--1 .carousel-item__info {
-  background-image: url("/images/mudra1.jpeg");
+  background-image: url("images/mudra1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -478,7 +478,7 @@ body {
 }
 
 .carousel-item--2 .carousel-item__info {
-  background-image: url("/images/mudra1.jpeg");
+  background-image: url("images/mudra1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -499,7 +499,7 @@ body {
 }
 
 .carousel-item--3 .carousel-item__info {
-  background-image: url("/images/mudra1.jpeg");
+  background-image: url("images/mudra1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -520,7 +520,7 @@ body {
 }
 
 .carousel-item--4 .carousel-item__info {
-  background-image: url("/images/mudra1.jpeg");
+  background-image: url("images/mudra1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -541,7 +541,7 @@ body {
 }
 
 .carousel-item--5 .carousel-item__info {
-  background-image: url("/images/mudra1.jpeg");
+  background-image: url("images/mudra1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
