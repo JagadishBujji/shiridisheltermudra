@@ -2089,8 +2089,9 @@ input:checked:before {
   padding-right: 30px;
 }
 .concreteBottom h3 {
-  margin-top: 45px;
-  padding-right: 300px;
+  /* margin-top: 45px;
+  padding-right: 300px; */
+  margin-top: 20px;
   color: #fcfcfd;
   font-size: 28px;
   font-family: "Costyle-p7lwv";
@@ -3088,7 +3089,7 @@ img {
   .column {
     -ms-flex: 100%;
     flex: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
 
@@ -3365,7 +3366,7 @@ img {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 70%;
   border-left: none;
   height: 100vh;
@@ -3843,6 +3844,14 @@ img {
     content: url(images/bluelanding1.png);
   }
 
+  .embracing {
+    display: none;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
   /* #landingImg {
     content: url(/images/landing-mobile.jpg);
   } */
@@ -3871,6 +3880,9 @@ img {
 
   #elephant {
     content: url(images/doors-mobile.jpg);
+  }
+  #elephant::after {
+    content: "some text";
   }
   #Bathroom {
     content: url(images/bathroom-mobile.jpg);
@@ -3980,7 +3992,7 @@ img {
   }
   .first-bricks {
     padding-left: 15px;
-    padding-top: 15px;
+    padding-top: 70px;
   }
   .adm {
     font-size: 11px;
@@ -4014,7 +4026,7 @@ img {
   .mobnavbar {
     padding: 0px;
     background: #fff;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     display: block;
     position: fixed;
     z-index: 999;
@@ -4059,6 +4071,149 @@ img {
   .fa-bars,
   .fa-circle-info {
     font-size: 16px;
+  }
+  .solar {
+    font-size: 16px;
+  }
+  .gas {
+    font-size: 12px;
+  }
+  .future {
+    font-size: 24px;
+  }
+  .are {
+    font-size: 20px;
+  }
+  .sus {
+    font-size: 20px;
+  }
+  .fri,
+  .eng,
+  .hea {
+    font-size: 12px;
+  }
+  .concreteHeading {
+    font-size: 18px;
+  }
+  .concreteBottom h3 {
+    /* margin-top: 36px; */
+    /* padding-right: 300px; */
+    color: #fcfcfd;
+    font-size: 18px;
+    font-family: "Costyle-p7lwv";
+  }
+  .toggle_inner {
+    top: 10px;
+  }
+  .tab {
+    padding-top: 20px;
+  }
+  .tabHead {
+    padding: 8px 16px;
+  }
+  .tab button {
+    width: 100%;
+    height: auto;
+    margin: 10px 3px;
+    padding: 14px 0px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .tabcontent {
+    padding: 0;
+  }
+  @keyframes buttonOut {
+    0% {
+      margin-left: 27px;
+    }
+    100% {
+      margin-left: 27px;
+    }
+  }
+  .tabcontent1 img {
+    width: 250px;
+    height: 250px;
+    margin-top: 200px;
+  }
+  .tabcontent1 {
+    padding: 0;
+  }
+  .number-send {
+    padding: 0 50px;
+  }
+  .view {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .viewlink {
+    padding: 20px;
+  }
+  .column img {
+    width: 80px;
+    height: 80px;
+  }
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    /* width: 100%; */
+  }
+  .prev1 {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #c7ca2a;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    right: 1%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #c7ca2a;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .mapsText {
+    color: #fff;
+    margin-top: 10px;
+  }
+  #caption1 {
+    color: #c7ca2a;
+  }
+  .mapssubcontent {
+    color: #fff;
+  }
+  .map-con {
+    font-size: 14px;
+  }
+  .mapsLeft {
+    margin-top: 10px;
+  }
+  .mapBig {
+    margin-top: 10px;
+  }
+  .maps-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mySlides1{
+    margin-top: 40px;
+  }
+  .homewid{
+    width: 430px;
+    height: 200px;
   }
 }
 
