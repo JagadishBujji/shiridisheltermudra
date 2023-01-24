@@ -869,87 +869,94 @@
         <!-- <div class="swiper-slide mudra"></div> -->
         <div class="swiper-slide safety" id="safety"></div>
         <div class="swiper-slide">
+          <div class="row container-fluid m-0 p-0 tab-row">
+            <div class="col-md-5 p-0">
+              <div class="tab">
+                <div class="tabHead">
+                  <h4>Plans</h4>
+                </div>
+                <button
+                  class="tablinks"
+                  onclick="openCity(event, 1)"
+                  id="defaultOpen"
+                >
+                  Site Plan
+                </button>
+                <button class="tablinks" onclick="openCity(event, 2)">
+                  Swap Room
+                </button>
+                <button class="tablinks" onclick="openCity(event, 3)">
+                  Floor Plan
+                </button>
+                <button class="tablinks" onclick="openCity(event, 4)">
+                  Movement Track
+                </button>
+                <button class="tablinks" onclick="openCity(event, 5)">
+                  Usable Space
+                </button>
+                <button class="tablinks" onclick="openCity(event, 6)">
+                  Car Parking plan
+                </button>
+              </div>
+            </div>
+            
           
-          <div class="tab">
-            <div class="tabHead">
-              <h4>Plans</h4>
+          <div class="col-md-7 p-0">
+            <div id="1" class="tabcontent">
+              <div id="site1" class="tabcontent1">
+                <img
+                  src="images/siteplan.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <button
-              class="tablinks"
-              onclick="openCity(event, 1)"
-              id="defaultOpen"
-            >
-              Site Plan
-            </button>
-            <button class="tablinks" onclick="openCity(event, 2)">
-              Swap Room
-            </button>
-            <button class="tablinks" onclick="openCity(event, 3)">
-              Floor Plan
-            </button>
-            <button class="tablinks" onclick="openCity(event, 4)">
-              Movement Track
-            </button>
-            <button class="tablinks" onclick="openCity(event, 5)">
-              Usable Space
-            </button>
-            <button class="tablinks" onclick="openCity(event, 6)">
-              Car Parking plan
-            </button>
-          </div>
-
-          <div id="1" class="tabcontent">
-            <div id="site1" class="tabcontent1">
-              <img
-                src="images/siteplan.jpg"
-                alt=""
-              />
+  
+            <div id="2" class="tabcontent">
+              <div id="Room1" class="tabcontent1">
+                <img
+                  src="images/Plans_Swap.png"
+                  alt=""
+                />
+              </div>  
             </div>
-          </div>
-
-          <div id="2" class="tabcontent">
-            <div id="Room1" class="tabcontent1">
-              <img
-                src="images/Plans_Swap.png"
-                alt=""
-              />
-            </div>  
-          </div>
-
-          <div id="3" class="tabcontent">
-            <div id="floor1" class="tabcontent1">
-              <img
-                src="images/floorplan.jpg"
-                alt=""
-              />
+  
+            <div id="3" class="tabcontent">
+              <div id="floor1" class="tabcontent1">
+                <img
+                  src="images/floorplan.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-          </div>
-
-          <div id="4" class="tabcontent">
-            <div id="track" class="tabcontent1">
-              <img
-                src="images/Plans_Trackable.png"
-                alt=""
-              />
-            </div> 
-          </div>
-
-          <div id="5" class="tabcontent">
-            <div id="usable" class="tabcontent1">
-              <img
-                src="images/Plans_Usable.png"
-                alt=""
-              />
+  
+            <div id="4" class="tabcontent">
+              <div id="track" class="tabcontent1">
+                <img
+                  src="images/Plans_Trackable.png"
+                  alt=""
+                />
+              </div> 
+            </div>
+  
+            <div id="5" class="tabcontent">
+              <div id="usable" class="tabcontent1">
+                <img
+                  src="images/Plans_Usable.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div id="6" class="tabcontent">
+              <div id="parking1" class="tabcontent1">
+                <img
+                  src="images/Car_Plan.jpg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div id="6" class="tabcontent">
-            <div id="parking1" class="tabcontent1">
-              <img
-                src="images/Car_Plan.jpg"
-                alt=""
-              />
-            </div>
-          </div>
+          
+         </div>
         </div>
         <!-- Maps -->
         <div class="swiper-slide" style="background-color: #085436;">
