@@ -33,7 +33,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="gsap.css" rel="stylesheet" />
+
     <link href="loan.css" rel="stylesheet" />
   </head>
   <body>
@@ -120,6 +120,41 @@
         </ul>
       </div>
     </nav>
+    <!-- mobile navbar  -->
+    <div class="mobnavbar" id="mob-navbar">
+      <ul class="nav-mob">
+        <li class="navmob-item">
+          <a href="brochure.html" class="icon-mob">
+            <i class="fa-solid fa-house-user"></i>
+            <p class="menu">Brochure</p>
+          </a>
+        </li>
+        <li class="navmob-item">
+          <a href="loan.html" class="icon-mob">
+            <i class="fa-solid fa-circle-info"></i>
+            <p class="menu">Loan</p>
+          </a>
+        </li>
+        <li class="">
+          <a href="index.html" class="icon-mob">
+            <img class="mob-logo" src="images/Logo-mobile.png" alt="" />
+          </a>
+        </li>
+        <li class="navmob-item">
+          <a onclick="openNav()" class="icon-mob">
+            <i class="fa-solid fa-phone"></i>
+            <p class="menu">Enquiry</p>
+          </a>
+        </li>
+        <li class="navmob-item">
+          <a href="" class="icon-mob">
+            <i class="fa-solid fa-bars"></i>
+            <p class="menu">Menu</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--mobile navbar  -->
     <div id="mySidenav" class="sidenav">
       <div class="enquiry-header">
         <h5 class="enquiry-head">Enquiry Now</h5>
@@ -179,10 +214,7 @@
     <div class="container-fluid loanbanner">
       <div class="row">
         <div class="col-md-5"></div>
-        <div
-          class="col-md-7"
-          style="padding-top: 100px; padding-right: 100px; padding-left: 70px"
-        >
+        <div class="col-md-7 loan-mobi">
           <h5 class="loan-heading m-0">Loan Calculator</h5>
           <ul id="carousel" class="elastislide-list">
             <li onclick="fun(0)">
@@ -256,11 +288,11 @@
               value="200000"
             />
             <div class="detail">
-              <p style="color: #000; font-size: 14px">
+              <p class="downpay">
                 DownPayment: Rs.
                 <span id="downPaymentText" style="color: #0b1c4c">2000000</span>
               </p>
-              <p style="color: #000; font-size: 14px">
+              <p class="loanpay">
                 Loan Payment: Rs.
                 <span id="loanAmountText" style="color: #0b1c4c">8000000</span>
               </p>
@@ -268,7 +300,7 @@
           </div>
           <div class="loandetails">
             <div>
-              <p style="color: #000; padding-right: 19px; font-size: 14px">
+              <p class="tenure">
                 Tenure:
                 <span id="loanPeriodText" style="color: #0b1c4c">12</span
                 ><span style="color: #0b1c4c">Years</span>
@@ -286,7 +318,7 @@
           </div>
           <div class="loandetails">
             <div>
-              <p style="color: #000; font-size: 14px">
+              <p class="interest">
                 Interest Rate:
                 <span id="interestRateText" style="color: #0b1c4c">6.5</span
                 ><span style="color: #0b1c4c">%</span>

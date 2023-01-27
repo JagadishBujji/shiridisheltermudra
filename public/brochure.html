@@ -151,6 +151,41 @@
         </ul>
       </div>
     </nav>
+    <!-- mobile navbar  -->
+    <div class="mobnavbar" id="mob-navbar">
+      <ul class="nav-mob">
+        <li class="navmob-item">
+          <a href="brochure.html" class="icon-mob">
+            <i class="fa-solid fa-house-user"></i>
+            <p class="menu">Brochure</p>
+          </a>
+        </li>
+        <li class="navmob-item">
+          <a href="loan.html" class="icon-mob">
+            <i class="fa-solid fa-circle-info"></i>
+            <p class="menu">Loan</p>
+          </a>
+        </li>
+        <li class="">
+          <a href="index.html" class="icon-mob">
+            <img class="mob-logo" src="images/Logo-mobile.png" alt="" />
+          </a>
+        </li>
+        <li class="navmob-item">
+          <a onclick="openNav()" class="icon-mob">
+            <i class="fa-solid fa-phone"></i>
+            <p class="menu">Enquiry</p>
+          </a>
+        </li>
+        <li class="navmob-item">
+          <a href="" class="icon-mob">
+            <i class="fa-solid fa-bars"></i>
+            <p class="menu">Menu</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--mobile navbar  -->
     <div id="mySidenav" class="sidenav">
       <div class="enquiry-header">
         <h5 class="enquiry-head">Enquiry Now</h5>
@@ -289,6 +324,21 @@
           auth
         );
       };
+
+      var navbar1 = document.getElementById("navbar");
+      var mobNavbar = document.getElementById("mob-navbar");
+      var tagSliderContainer = document.getElementById("tagSliderContainer");
+      if(width < 450) {
+        console.log('inside');
+        landingImg1.src = 'images/landing-mobile.jpg';
+        dark.style.backgroundImage = "url(images/topview-mobile.png)";
+        navbar1.style.display= "none";
+        // console.log('test: ', landingImgMain1.src);
+      } else {
+        // navbar1.style.display= "block";
+        mobNavbar.style.display= "none";
+        tagSliderContainer.style.display= "none";
+      }
 
       window.sendOtpHandler = () => {
         // getOtp.disabled = true;

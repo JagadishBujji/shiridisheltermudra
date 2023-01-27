@@ -147,7 +147,7 @@
         </ul>
       </div>
     </nav>
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" style="width: none;">
       <div class="enquiry-header">
         <h5 class="enquiry-head">Enquiry Now</h5>
         <p class="enquiry-content">Will Get In Touch With You Shortly</p>
@@ -209,15 +209,15 @@
     <div class="mobnavbar" id="mob-navbar">
     <ul class="nav-mob">
       <li class="navmob-item">
-        <a href="index.html" class="icon-mob">
+        <a href="brochure.html" class="icon-mob">
           <i class="fa-solid fa-house-user"></i>
-         <p class="menu">Home</p>
+         <p class="menu">Brochure</p>
        </a>
       </li>
       <li class="navmob-item">
-        <a href="aboutus.html" class="icon-mob">
+        <a href="loan.html" class="icon-mob">
           <i class="fa-solid fa-circle-info"></i>
-          <p class="menu">About</p>
+          <p class="menu">Loan</p>
         </a>
       </li>
       <li class="">
@@ -227,19 +227,41 @@
         </a>
       </li>
       <li class="navmob-item">
-        <a href="contact.css" class="icon-mob">
+        <a onclick="openNav()" class="icon-mob">
           <i class="fa-solid fa-phone"></i>
-          <p class="menu">Contact</p>
+          <p class="menu">Enquiry</p>
         </a>
       </li>
-      <li class="navmob-item">
+      <li  class="navmob-item">
         <a href="" class="icon-mob">
           <i class="fa-solid fa-bars"></i>
-          <p class="menu">Menu</p>
+          <p class="menu" >Menu</p>
         </a>
       </li>
     </ul>
   </div>
+
+  <!--  -->
+  <div id="menuArea">
+    <input class="mobile-menu" type="checkbox" id="menuToggle"></input>
+  
+  <label for="menuToggle" class="menuOpen">
+    <div class="open"></div>
+  </label>
+  
+  <div class="menu1 menuEffects">
+    <label class="mobile-label" for="menuToggle"></label>
+    <div class="menuContent">
+      <ul class="mobile-menuul">
+        <li class="mobile-menuli"><a class="mobile-a" href="aboutus.html">About</a></li>
+        <li class="mobile-menuli"><a class="mobile-a" href="news.html">News</a></li>
+        <li class="mobile-menuli"><a class="mobile-a" href="contact.html">Contact</a></li>
+        <!-- <li class="mobile-menuli"><a class="mobile-a" href="#">Disclaimer</a></li> -->
+      </ul>
+    </div>
+  </div>
+  </div>
+  <!--  -->
     <!--mobile navbar  -->
     <!-- end of navbar -->
     <!-- Swiper -->
@@ -876,12 +898,13 @@
                   <h4>Plans</h4>
                 </div>
                 <button
-                  class="tablinks"
+                  class="tablinks content1"
                   onclick="openCity(event, 1)"
                   id="defaultOpen"
                 >
                   Site Plan
                 </button>
+                
                 <button class="tablinks" onclick="openCity(event, 2)">
                   Swap Room
                 </button>
@@ -1089,7 +1112,138 @@
             </a>
           </div>
         </div>
-        <div class="swiper-slide specs"></div>
+        <div class="swiper-slide specs ">
+          <h1 class="mobi-spec hidden">SPECIFICATIONS</h1>
+          <div class="row container-fluid hidden">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/data-structure.png" alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Structure</b></h3>
+                  <p class="spec-pars"> RCC Framed Structure with columns, Beams & Slabs by ISI graded Cement and TMT bars of grade 500, bulit under strict quality controls. Red Bricks will be used only in External walls. 4" Concrete Solid Blocks Will be used in Partition Walls.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/floor.png" alt="" class="img-icon" />
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Flooring </b><span class="kaj">Kajaria / Somany / Johnson or Equivalent</span></h3>
+                    <p class="spec">Living / Dining, Bedrooms:</p>
+                  <ul class="spec-livi">
+                    <li class="li-spec">Flooring: 20 x 120 / 80 x 120 / 60 x 60cm Wood Finish Tiles</li>
+                    <li class="li-spec">Kitchen: Flooring: 20 x 120 / 80 x 120 / 60 x 60cm Wood Finish Tiles.</li>
+                    <li class="li-spec">Bathrooms: Bath with 80 x 120 cm Digital Glazed Vitrified Tiles Wall & 60 x 60 cm Mat Finish Anti- skid Floor tiles. Wall Tiles upto 8.5' height</li>
+                    <li class="li-spec">Balcony: Flooring: 60 x 60cm Wooden Finish Tiles.</li> 
+                   
+                  </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/paint-roller.png" alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Wall Finish </b><span class="kaj">Asian Paints / Berger / Nippon or Equivalent</span></h3>
+                    <ul class="spec-livi">
+                      <li class="li-spec">Internal: Cement plaster finish with 3 coats Putty and Emuision Ceiling with 3 coats Putty Finised</li>
+                      <li class="li-spec">Internal painting - Asian paints - (Royal Shine / Aspire Coating) </li>
+                      <li class="li-spec">External painting - Asian paints Weather Resistant Royal Play / Metallic Design (Special Effect Paints in 1 wall of Master BedRoom & Hall) </li>
+                     
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/boiling.png" alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Kitchen </b><span class="kaj">Frankie / Prince or Equivalent</span></h3>
+                    <ul class="spec-livi">
+                      <li class="li-spec">Wall Finishes: Imported tiles up to 2 ft height above the counter</li>
+                      <li class="li-spec">Kitchen Counter: Hi - line type Kitchen with Italian Marble Platform at center.
+                        Jet Black Granite Counter Top (on the  side) with ISI quality Corrosion Proof stainless and steel double bowl sink </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/door-spec.png" alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Doors </b><span class="kaj">Hand made Doors</span></h3>
+                    <ul class="spec-livi">
+                      <li class="li-spec">Main Door (4' x 7'): Hand Finised & Varnished 1st  Quality Teak Frame &  Doors.</li>
+                      <li class="li-spec">Bedroom Door (3.5' x 7'): Hand Finised Teakwood frames with good Quality Solid wood doors. </li>
+                      <li class="li-spec">Bathroom (2.5' x 7'): Teakwood frames with Waterproof - laminated Wooden Doors. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/win.png" alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Windows </b><span class="kaj">Fenesta / Encraft / LG  Korea / Aparna or Equivalent</span></h3>
+                    <ul class="spec-livi">
+                      <li class="li-spec">Hall, Bed Rooms, Kitchen: UPVC sliding French Doors - color glass with frames.</li>
+                      <li class="li-spec">Bathroom: UPVC Ventilator with Havells Exhaust Fan </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/energy.png " alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Electrical </b><span class="kaj">Havells / Polycab or Equivalent</span></h3>
+                    <ul class="spec-livi">
+                      <li class="li-spec">Wiring: Three phase supply with independent Meters and  concealed wiring.</li>
+                      <li class="li-spec">Switches: Modular Switches - GM / Havells or Equivalent </li>
+                      <li class="li-spec">Wires: Polycab or Equivalent </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/bathtub.png" alt="" class="img-icon"/>
+                </div>
+                <div class="col-md-10 p-0">
+                  <div class="content-spec">
+                    <h3 class="spec-head"><b>Bathroom / Toilet Fittings </b><span class="kaj">Kohler / Jaquar / Grohe or Equivalent</span></h3>
+                    <ul class="spec-livi">
+                      <li class="li-spec">Sanitary Fittings: Floor mounted EWC with Exposed Flush Tank - White color in both wash Rooms.</li>
+                      <li class="li-spec">1 no. 7' x 7' Toilet - with 4'x 4' Shower Enclosure &  Counter Top Wash basin with Korean top. Bath will be  equipped with 8' x 8' Shower head, mixer & Health Faueet.</li>
+                      <li class="li-spec">2nd Washroom Will be equipped with Mixer, Wall mounted Wash Basin, 8' x 8' Shower Head & Health Faucet.</li>
+                      <li class="li-spec">All Toilet Fittings will be chrome plated - KOHLER / JAQUAR / Grohe or Equivalent.</li>
+                      <li class="li-spec">Shower Enclosure: Jaquar / Kohler - Bath Cubicle in Master Bedroom only. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="swiper-slide embracing"></div>
         <div class="swiper-slide location " id="location"></div>
         

@@ -389,14 +389,7 @@ input[type="range"]:focus::-ms-fill-upper {
   right: 0;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
+
 .sidenav {
   right: 0;
 }
@@ -647,4 +640,133 @@ input[type="range"]:focus::-ms-fill-upper {
 .demo-4 .elastislide-horizontal {
   background-color: transparent;
   border-radius: 20px 20px 0 0;
+}
+
+.loan-mobi {
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-left: 70px;
+}
+.downpay {
+  color: #000;
+  font-size: 14px;
+}
+
+.loanpay {
+  color: #000;
+  font-size: 14px;
+}
+
+.tenure {
+  color: #000;
+  padding-right: 19px;
+  font-size: 14px;
+}
+.interest {
+  color: #000;
+  font-size: 14px;
+}
+
+/*  */
+
+.mobnavbar {
+  padding: 0px;
+  background: #fff;
+  /* border-radius: 30px; */
+  display: block;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+}
+.nav-mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+.navmob-item {
+  padding: 15px;
+  margin: 0px 5px;
+}
+.menu {
+  margin-bottom: 0;
+}
+.mob-logo {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 0px 10px 0px #999;
+  border-radius: 50%;
+  margin-top: -8px;
+  background: #fff;
+}
+.icon-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  text-decoration: none;
+}
+.icon-mob:hover {
+  text-decoration: none;
+}
+.fa-house-user,
+.fa-phone,
+.fa-bars,
+.fa-circle-info {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 450px) {
+  .loanbanner {
+    background: #fff;
+  }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .loan-mobi {
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .elastislide-horizontal {
+    padding: 0;
+    box-shadow: none;
+  }
+  .downpayment {
+    width: 100%;
+  }
+  .downpay {
+    font-size: 8px;
+  }
+
+  .loanpay {
+    font-size: 8px;
+  }
+  .tenure {
+    font-size: 10px;
+  }
+  .interest {
+    font-size: 10px;
+    padding-right: 8px;
+  }
+  .indicative {
+    font-size: 12px;
+    padding-top: 0px;
+  }
+  .faqBtn {
+    padding-top: 40px;
+  }
+  .getotp {
+    top: 292px;
+  }
+  .verify {
+    top: 364px;
+  }
 }
