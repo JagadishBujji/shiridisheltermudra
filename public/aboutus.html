@@ -550,5 +550,15 @@
         document.getElementById("mySidenav").style.width = "0";
       }
     </script>
+    <script>
+      var navbar1 = document.getElementById("navbar");
+      var mobNavbar = document.getElementById("mob-navbar");
+      if(width < 450) {
+       navbar1.style.display= "none";
+       } else {
+        navbar1.style.display= "block";
+        mobNavbar.style.display= "none";
+        }
+    </script>
   </body>
 </html>

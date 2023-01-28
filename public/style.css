@@ -72,6 +72,10 @@ body {
   height: 100vh;
 }
 
+.mobnavbar {
+  display: none;
+}
+
 .center-logo {
   width: 500px;
   height: 500px;

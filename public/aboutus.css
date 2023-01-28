@@ -14,6 +14,10 @@
   top: 0;
 }
 
+.mobnavbar {
+  display: none;
+}
+
 .navbar-collapse {
   justify-content: center;
 }
@@ -393,7 +397,7 @@
   padding: 0px;
   background: #fff;
   /* border-radius: 30px; */
-  display: block;
+  /* display: block; */
   position: fixed;
   z-index: 999;
   bottom: 0;

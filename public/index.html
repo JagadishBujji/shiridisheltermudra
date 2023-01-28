@@ -1604,18 +1604,23 @@
         landingImg1.style.opacity = 1;
       }, 3000);
 
+      var tagSliderContainer = document.getElementById("tagSliderContainer");
       var navbar1 = document.getElementById("navbar");
       var mobNavbar = document.getElementById("mob-navbar");
-      var tagSliderContainer = document.getElementById("tagSliderContainer");
+
+      navbar1.style.display= "none";
+      // mobNavbar.style.display= "none";
+
       if(width < 450) {
         console.log('inside');
         landingImg1.src = 'images/landing-mobile.jpg';
         dark.style.backgroundImage = "url(images/topview-mobile.png)";
         navbar1.style.display= "none";
+        mobNavbar.style.display= "block";
         // console.log('test: ', landingImgMain1.src);
       } else {
-        navbar1.style.display= "block";
         mobNavbar.style.display= "none";
+        navbar1.style.display= "block";
         tagSliderContainer.style.display= "none";
       }
 
