@@ -467,6 +467,7 @@ ul {
 .navmob-item {
   padding: 15px;
   margin: 0px 5px;
+  color: #3a833d;
 }
 .menu {
   margin-bottom: 0;
@@ -688,5 +689,18 @@ ul {
   }
   .faq .accordion .card .card-header h5 button:after {
     left: 0;
+  }
+  .getotp{
+    bottom: 290px;
+  }
+  .verify {
+    right: 54px;
+    bottom: 219px;
+  }
+  .navbar{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
   }
 }

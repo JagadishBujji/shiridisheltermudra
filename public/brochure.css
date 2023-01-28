@@ -401,6 +401,7 @@ body {
 .navmob-item {
   padding: 15px;
   margin: 0px 5px;
+  color: #008000;
 }
 .menu {
   margin-bottom: 0;
@@ -627,5 +628,11 @@ body {
   }
   .whitefield{
     padding: 30px;
+  }
+  .navbar{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
   }
 }

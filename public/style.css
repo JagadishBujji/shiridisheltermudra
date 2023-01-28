@@ -67,7 +67,7 @@ body {
 }
 
 .landing-img {
-  background-image: url(images/WhitefieldMudraBrochure01-BG.png);
+  background-image: url(images/blue_bg.png);
   background-size: 100% 100vh;
   height: 100vh;
 }
@@ -3877,7 +3877,7 @@ img {
   transform: translateY(-30%);
 }
 
-.img-door{
+.img-door {
   width: 40px;
   height: 40px;
 }
@@ -3885,8 +3885,6 @@ img {
 .map-con {
   font-size: 14px;
 }
-
-
 
 /* Maps */
 @media (min-width: 1024px) {

@@ -885,6 +885,7 @@ body {
 .navmob-item {
   padding: 15px;
   margin: 0px 5px;
+  color: #3a833d;
 }
 .menu {
   margin-bottom: 0;
@@ -926,7 +927,7 @@ body {
     padding-top: 0px;
   }
   .modal {
-    top: 5px;
+    top: 50px;
   }
   .modal-content {
     width: 100%;
@@ -940,18 +941,18 @@ body {
     padding-left: 0;
   }
   .img-news {
-    width: 150px;
-    height: 130px;
+    width: 250px;
+    height: 250px;
   }
   .new-para {
-    font-size: 8px;
+    font-size: 10px;
     margin-bottom: 5px;
   }
   .modalcolmd4 {
     height: 12%;
   }
   .carousel-img {
-    top: 65%;
+    top: 60%;
   }
   .demo {
     width: 50px;
@@ -960,9 +961,34 @@ body {
   }
   .column {
     width: 11.66%;
-    margin-left: 14px;
+    margin-left: 16px;
   }
-  .carousel-para{
+  .carousel-para {
     display: none;
+  }
+  .next {
+    top: 90%;
+  }
+  .prev {
+    top: 90%;
+  }
+  .modal-img {
+    left: 120px;
+  }
+  .modal-content p {
+    font-size: 14px;
+  }
+  .navbar {
+    display: none;
+  }
+  #menuToggle {
+    display: none;
+  }
+  .getotp {
+    bottom: 290px;
+  }
+  .verify {
+    right: 56px;
+    bottom: 216px;
   }
 }

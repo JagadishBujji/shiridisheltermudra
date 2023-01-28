@@ -690,6 +690,7 @@ input[type="range"]:focus::-ms-fill-upper {
 .navmob-item {
   padding: 15px;
   margin: 0px 5px;
+  color: #3a833d;
 }
 .menu {
   margin-bottom: 0;
@@ -932,5 +933,11 @@ input[type="range"]:focus::-ms-fill-upper {
   }
   .verify {
     top: 364px;
+  }
+  .navbar{
+    display: none;
+  }
+  .mobile-menu{
+    display: none;
   }
 }

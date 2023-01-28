@@ -410,6 +410,7 @@
 .navmob-item {
   padding: 15px;
   margin: 0px 5px;
+  color: #3a833d;
 }
 .menu {
   margin-bottom: 0;
@@ -931,4 +932,21 @@ body {
     width: 20px;
     fill: #fff;
   }
+  .navbar {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .getotp {
+    bottom: 292px;
+  }
+  .verify {
+    right: 54px;
+    bottom: 219px;
+  }
+}
+
+.mobile-menu {
+  display: none;
 }
