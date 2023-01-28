@@ -9,9 +9,6 @@ body {
   font-family: "fedra-sans";
 }
 
-.mobnavbar {
-  display: none;
-}
 
 .navbar {
   display: flex;
@@ -944,4 +941,5 @@ input[type="range"]:focus::-ms-fill-upper {
   .mobile-menu{
     display: none;
   }
+  
 }

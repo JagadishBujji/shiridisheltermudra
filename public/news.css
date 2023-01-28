@@ -8,9 +8,7 @@ body {
   font-family: "fedra-sans";
 }
 
-.mobnavbar {
-  display: none;
-}
+
 
 .navbar {
   display: flex;
@@ -985,14 +983,15 @@ body {
   .navbar {
     display: none;
   }
-  #menuToggle {
-    display: none;
-  }
+
   .getotp {
     bottom: 290px;
   }
   .verify {
     right: 56px;
     bottom: 216px;
+  }
+  .mobile-menu{
+    display: none;
   }
 }

@@ -8,9 +8,7 @@ body {
   font-family: "fedra-sans";
 }
 
-.mobnavbar {
-  display: none;
-}
+
 
 .navbar {
   display: flex;

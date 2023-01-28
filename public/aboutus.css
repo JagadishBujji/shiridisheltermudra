@@ -14,9 +14,7 @@
   top: 0;
 }
 
-.mobnavbar {
-  display: none;
-}
+
 
 .navbar-collapse {
   justify-content: center;
@@ -939,9 +937,7 @@ body {
   .navbar {
     display: none;
   }
-  .mobile-menu {
-    display: none;
-  }
+ 
   .getotp {
     bottom: 292px;
   }
@@ -949,8 +945,9 @@ body {
     right: 54px;
     bottom: 219px;
   }
+  .mobile-menu{
+    display: none;
+  }
 }
 
-.mobile-menu {
-  display: none;
-}
+

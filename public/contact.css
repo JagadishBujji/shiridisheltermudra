@@ -8,9 +8,9 @@ body {
   font-family: "fedra-sans";
 }
 
-.mobnavbar {
+/* .mobnavbar {
   display: none;
-}
+} */
 
 .navbar {
   display: flex;
@@ -801,4 +801,8 @@ input[type="submit"] {
     right: 54px;
     bottom: 219px;
   }
+  .mobile-menu{
+    display: none;
+  }
+  
 }
