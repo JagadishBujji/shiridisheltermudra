@@ -1125,7 +1125,7 @@ input[type="range"]:focus::-ms-fill-upper {
   font-size: 30px;
   font-weight: 600;
   width: 100%;
-  padding: 58px;
+  padding: 66px;
   background: #d1e3e3;
   outline: none;
   border: none;
@@ -3791,7 +3791,7 @@ img {
   top: 20px;
   background-size: 100%;
   cursor: pointer;
-  background: #fff
+  /* background: #fff; */
 }
 
 .menu1 .menuContent {
@@ -3817,7 +3817,7 @@ img {
   font-family: Trebuchet MS;
   text-transform: uppercase;
   padding: 10px 0;
-  font-size: 14px;
+  font-size: 30px;
 }
 
 .menu1 .mobile-menuul .mobile-menuli a:hover {
@@ -3877,12 +3877,24 @@ img {
   transform: translateY(-30%);
 }
 
+.img-door{
+  width: 40px;
+  height: 40px;
+}
+
+.map-con {
+  font-size: 14px;
+}
+
+
+
 /* Maps */
 @media (min-width: 1024px) {
   /* big landscape tablets, laptops, and desktops */
   .maps-main {
     position: relative;
     margin: 0;
+    padding: 30px 0;
   }
   .mapSub {
     text-align: left;
@@ -3913,7 +3925,7 @@ img {
   .next1 {
     cursor: pointer;
     position: absolute;
-    top: 75%;
+    top: 82%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -3989,6 +4001,11 @@ img {
     color: #fff;
     font-weight: 800;
     font-size: 32px;
+  }
+
+  .mapssubcontent {
+    max-height: 120px;
+    overflow-y: scroll;
   }
   #caption1 {
     color: #c7ca2a;
