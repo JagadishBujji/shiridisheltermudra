@@ -169,7 +169,6 @@ body {
   right: 0;
 }
 
-
 .open {
   background-color: #3c3c3c;
   width: 24px;
@@ -328,7 +327,7 @@ body {
   transform: translateY(-30%);
 }
 
-.img-door{
+.img-door {
   width: 40px;
   height: 40px;
 }
@@ -702,12 +701,268 @@ body {
   justify-content: center;
 }
 
+.open {
+  background-color: #3c3c3c;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  top: 8px;
+}
 
-@media screen and (max-height: 450px) {
+.open:before {
+  content: "";
+  background-color: #3c3c3c;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after {
+  content: "";
+  background-color: #3c3c3c;
+  width: 24px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen {
+  width: 24px;
+  height: 20px;
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+.menuOpen:hover .open:before {
+  top: -9px;
+}
+
+.menuOpen:hover .open:after {
+  top: 5px;
+}
+
+.menu1 {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #3a8339;
+  z-index: 10;
+}
+
+.menu1 .mobile-label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+  /* background: #fff; */
+}
+
+.menu1 .menuContent {
+  position: relative;
+  top: 50%;
+  font-size: 54px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -170px;
+}
+
+.menu1 .mobile-menuul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu1 .mobile-menuul .mobile-menuli a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: Trebuchet MS;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.menu1 .mobile-menuul .mobile-menuli a:hover {
+  color: #ff8702;
+}
+
+.menu1 .mobile-menuul .mobile-menuli:hover {
+  background: white;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects .mobile-menuul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects .mobile-menuul {
+  opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: white;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects .mobile-menuul {
+  transform: translateY(-30%);
+}
+
+.img-door {
+  width: 40px;
+  height: 40px;
+}
+
+.mobnavbar {
+  padding: 0px;
+  background: #fff;
+  /* border-radius: 30px; */
+  display: block;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+}
+.nav-mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+.navmob-item {
+  padding: 15px;
+  margin: 0px 5px;
+}
+.menu {
+  margin-bottom: 0;
+}
+.mob-logo {
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 0px 10px 0px #999;
+  border-radius: 50%;
+  margin-top: -8px;
+  background: #fff;
+}
+.icon-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  text-decoration: none;
+}
+.icon-mob:hover {
+  text-decoration: none;
+}
+.fa-house-user,
+.fa-phone,
+.fa-bars,
+.fa-circle-info {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 450px) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
+  }
+  .container-fluid {
+    padding-top: 0px;
+  }
+  .modal {
+    top: 5px;
+  }
+  .modal-content {
+    width: 100%;
+    height: 60%;
+  }
+  .modal-close {
+    right: 20px;
+    top: -83px;
+  }
+  .heading-myslides {
+    padding-left: 0;
+  }
+  .img-news {
+    width: 150px;
+    height: 130px;
+  }
+  .new-para {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+  .modalcolmd4 {
+    height: 12%;
+  }
+  .carousel-img {
+    top: 65%;
+  }
+  .demo {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+  .column {
+    width: 11.66%;
+    margin-left: 14px;
+  }
+  .carousel-para{
+    display: none;
   }
 }
