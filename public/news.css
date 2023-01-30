@@ -579,10 +579,17 @@ body {
   display: none;
 }
 
+
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .verify {
   position: absolute;
   right: 50px;
-  bottom: 189px;
+  top: 363px;
   font-size: 12px;
   cursor: pointer;
   color: #3e9528;
@@ -590,15 +597,10 @@ body {
   font-weight: 600;
 }
 
-.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
 .getotp {
   position: absolute;
   right: 50px;
-  bottom: 260px;
+  top: 290px;
   font-size: 12px;
   cursor: pointer;
   color: #3e9528;
@@ -994,13 +996,16 @@ body {
   }
 
   .getotp {
-    bottom: 290px;
+    bottom: 292px;
   }
   .verify {
-    right: 56px;
-    bottom: 216px;
+    right: 54px;
+    bottom: 219px;
   }
   .mobile-menu{
     display: none;
+  }
+  .mobnavbar{
+    display: block;
   }
 }

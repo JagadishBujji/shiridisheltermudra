@@ -93,7 +93,7 @@
 .verify {
   position: absolute;
   right: 50px;
-  bottom: 189px;
+  top: 363px;
   font-size: 12px;
   cursor: pointer;
   color: #3e9528;
@@ -104,7 +104,7 @@
 .getotp {
   position: absolute;
   right: 50px;
-  bottom: 260px;
+  top: 290px;
   font-size: 12px;
   cursor: pointer;
   color: #3e9528;
@@ -951,5 +951,8 @@ body {
   }
   .mobile-menu {
     display: none;
+  }
+  .mobnavbar{
+    display: block;
   }
 }

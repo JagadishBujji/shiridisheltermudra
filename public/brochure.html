@@ -233,10 +233,12 @@
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">MOBILE</label>
+          <p id="getOtp" class="getotp" onclick="sendOtpHandler()">Get OTP</p>
           <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
           <label class="eq-label" for="phone">OTP</label>
+          <p id="verifyBtn" class="verify" onclick="verifyHandler()">Verify</p>
           <input class="eq-input" type="tel" id="phone" />
         </div>
         <div class="form-item">
@@ -427,7 +429,7 @@
 
     <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("mySidenav").style.width = "400px";
       }
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";

@@ -796,8 +796,8 @@ input[type="submit"] {
   .contact2{
     height: 100vh;
   }
-  .getotp{
-    bottom: 290px;
+  .getotp {
+    bottom: 292px;
   }
   .verify {
     right: 54px;
@@ -805,6 +805,9 @@ input[type="submit"] {
   }
   .mobile-menu{
     display: none;
+  }
+  .mobnavbar{
+    display: block;
   }
   
 }

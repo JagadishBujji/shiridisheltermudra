@@ -3103,7 +3103,6 @@ img {
 }
 
 .verify {
-  display: none;
   position: absolute;
   right: 50px;
   top: 352px;
@@ -3419,7 +3418,6 @@ img {
     margin-left: 120px;
   }
 }
-
 
 /* Style the tab content */
 .tabcontent {
@@ -3973,9 +3971,10 @@ img {
     color: #c7ca2a;
   }
 
-  .gallerymobile{
+  .gallerymobile {
     width: 100%;
     height: 100vh;
+    display: none;
   }
   /* On hover, add a black background color with a little bit see-through */
   /* .prev1:hover,
@@ -4116,6 +4115,8 @@ img {
     display: none;
   }
 
+
+
   /* #landingImg {
     content: url(/images/landing-mobile.jpg);
   } */
@@ -4171,11 +4172,11 @@ img {
     content: url(images/basketballcourt-mobile.png);
   }
 
-  #flooring{
+  #flooring {
     content: url(images/floormoblile.png);
     height: 100vh;
   }
-  #steel{
+  #steel {
     content: url(images/steelmobile.png);
     height: 100vh;
   }
@@ -4391,7 +4392,7 @@ img {
   .toggle_inner {
     top: 10px;
   }
-  
+
   .tab {
     padding-top: 150px;
     display: flex;
@@ -4522,7 +4523,10 @@ img {
   .homewid {
     width: 430px;
     height: 200px;
+    display: none;
+
   }
+
   .tab-row {
     display: flex;
     flex-direction: column-reverse;
@@ -4556,7 +4560,10 @@ img {
   #menuArea {
     display: block;
   }
-  .buttonlistname{
+  .buttonlistname {
+    display: none;
+  }
+  .gallery_main{
     display: none;
   }
 }

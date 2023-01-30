@@ -419,32 +419,15 @@ ul {
   margin: 10px;
 }
 
-.verify {
-  position: absolute;
-  right: 50px;
-  bottom: 189px;
-  font-size: 12px;
-  cursor: pointer;
-  color: #3e9528;
-  margin: 0;
-  font-weight: 600;
-}
+
 
 .disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-.getotp {
-  position: absolute;
-  right: 50px;
-  bottom: 260px;
-  font-size: 12px;
-  cursor: pointer;
-  color: #3e9528;
-  margin: 0;
-  font-weight: 600;
-}
+
+
 
 .mobnavbar {
   padding: 0px;
@@ -661,6 +644,29 @@ ul {
   height: 40px;
 }
 
+.verify {
+  position: absolute;
+  right: 50px;
+  top: 363px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e9528;
+  margin: 0;
+  font-weight: 600;
+}
+
+.getotp {
+  position: absolute;
+  right: 50px;
+  top: 290px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #3e9528;
+  margin: 0;
+  font-weight: 600;
+}
+
+
 
 @media screen and (max-width: 450px) {
   .sidenav {
@@ -690,18 +696,21 @@ ul {
   .faq .accordion .card .card-header h5 button:after {
     left: 0;
   }
-  .getotp{
-    bottom: 290px;
+  .getotp {
+    bottom: 292px;
   }
   .verify {
     right: 54px;
     bottom: 219px;
   }
+
   .navbar{
     display: none;
   }
   .mobile-menu{
     display: none;
   }
-  
+  .mobnavbar{
+    display: block;
+  }
 }
