@@ -3418,6 +3418,63 @@ img {
     margin-left: 120px;
   }
 }
+.tab2 {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #02a647;
+  width: 60%;
+  height: 100vh;
+  padding-top: 100px;
+}
+.tab2Head {
+  background: #20b446;
+  color: #fff;
+  padding: 8px 40px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* Style the buttons inside the tab */
+.tab2 button {
+  display: block;
+  background-color: #0c9346;
+  border: 1px solid #02a647;
+  border-radius: 20px;
+  color: #000;
+  padding: 12px 16px;
+  width: 80%;
+  height: 50px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 13px 27px;
+}
+
+.tabcontent1 img {
+  width: 500px;
+  height: 500px;
+  margin-top: 25px;
+}
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #a4ee3f;
+}
+
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+  background-color: #a4ee3f;
+  animation: buttonOut 1s forwards;
+}
+
+@keyframes buttonOut {
+  0% {
+    margin-left: 27px;
+  }
+  100% {
+    margin-left: 120px;
+  }
+}
 
 /* Style the tab content */
 .tabcontent {
@@ -4029,6 +4086,9 @@ img {
     max-height: 120px;
     overflow-y: scroll;
   }
+  /* .mapssubcontent::-webkit-scrollbar {
+    display: none;
+  } */
   #caption1 {
     color: #c7ca2a;
     position: relative;
@@ -4399,6 +4459,7 @@ img {
     background: none;
     border: none;
     width: 100%;
+    display: none;
   }
   .tab button.active {
     animation: none;
@@ -4410,6 +4471,42 @@ img {
     display: none;
   }
   .tab button {
+    width: 100%;
+    /* height: auto; */
+    margin: 10px 3px;
+    padding: 0px 3px;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 50%;
+  }
+  .tabcontent {
+    padding: 0;
+  }
+  @keyframes buttonOut {
+    0% {
+      margin-left: 27px;
+    }
+    100% {
+      margin-left: 27px;
+    }
+  }
+  .tab2 {
+    padding-top: 150px;
+    display: flex;
+    background: none;
+    border: none;
+    width: 100%;
+  }
+  .tab2 button.active {
+    animation: none;
+  }
+
+  .tab2Head {
+    padding: 8px 16px;
+    background: none;
+    display: none;
+  }
+  .tab2 button {
     width: 100%;
     /* height: auto; */
     margin: 10px 3px;
