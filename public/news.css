@@ -871,6 +871,7 @@ body {
   background: #fff;
   /* border-radius: 30px; */
   /* display: block; */
+  display: none;
   position: fixed;
   z-index: 999;
   bottom: 0;
@@ -916,6 +917,14 @@ body {
 .fa-bars,
 .fa-circle-info {
   font-size: 16px;
+}
+
+.newspara1{
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.newspara1::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 450px) {

@@ -22,6 +22,7 @@ body {
   width: 100%;
   position: absolute;
   /* top: 88%; */
+  
 }
 
 .navbar-collapse {
@@ -442,6 +443,7 @@ input[type="submit"] {
   z-index: 999;
   bottom: 0;
   width: 100%;
+  display: none;
 }
 .nav-mob {
   display: flex;

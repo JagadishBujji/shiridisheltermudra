@@ -3420,6 +3420,7 @@ img {
   }
 }
 
+
 /* Style the tab content */
 .tabcontent {
   float: left;
@@ -3890,6 +3891,21 @@ img {
   font-size: 14px;
 }
 
+.fa-chevron-left,
+.fa-chevron-right {
+  color: black;
+  font-size: 30px;
+}
+
+.construction {
+  width: 20px;
+  height: 20px;
+}
+
+.buttonlist {
+  display: none;
+}
+
 /* Maps */
 @media (min-width: 1024px) {
   /* big landscape tablets, laptops, and desktops */
@@ -3955,6 +3971,11 @@ img {
     left: 25%;
 
     color: #c7ca2a;
+  }
+
+  .gallerymobile{
+    width: 100%;
+    height: 100vh;
   }
   /* On hover, add a black background color with a little bit see-through */
   /* .prev1:hover,
@@ -4080,6 +4101,9 @@ img {
 }
 
 @media screen and (max-width: 450px) {
+  /* .buttonlist {
+    display: block;
+  } */
   #landingImgMain {
     content: url(images/bluelanding1.png);
   }
@@ -4119,11 +4143,22 @@ img {
   }
 
   #elephant {
-    content: url(images/doors-mobile.jpg);
+    content: url(images/doors-mobile.png);
   }
-  #elephant::after {
-    content: "some text";
+
+  #pillarss {
+    content: url(images/pillarsmobile.png);
+    height: 100vh;
   }
+  /* #solarheat{
+    content: url(images/solar.png);
+  } */
+
+  #con {
+    content: url(images/concretemobile.png);
+    height: 100vh;
+  }
+
   #Bathroom {
     content: url(images/bathroom-mobile.jpg);
   }
@@ -4134,6 +4169,15 @@ img {
 
   #green {
     content: url(images/basketballcourt-mobile.png);
+  }
+
+  #flooring{
+    content: url(images/floormoblile.png);
+    height: 100vh;
+  }
+  #steel{
+    content: url(images/steelmobile.png);
+    height: 100vh;
   }
 
   /* #dark {
@@ -4347,8 +4391,9 @@ img {
   .toggle_inner {
     top: 10px;
   }
+  
   .tab {
-    padding-top: 80px;
+    padding-top: 150px;
     display: flex;
     background: none;
     border: none;
@@ -4386,7 +4431,7 @@ img {
   .tabcontent1 img {
     width: 450px;
     height: 300px;
-    margin-top: 220px;
+    margin-top: 300px;
   }
   .tabcontent1 {
     margin-top: 30px;
@@ -4395,7 +4440,7 @@ img {
     padding-right: 0;
   }
   .number-send {
-    padding: 0 50px;
+    padding: 0 20px;
   }
   .view {
     border-radius: 20px 20px 0px 0px;
@@ -4510,6 +4555,9 @@ img {
   }
   #menuArea {
     display: block;
+  }
+  .buttonlistname{
+    display: none;
   }
 }
 

@@ -560,7 +560,8 @@ input[type="range"]:focus::-ms-fill-upper {
 .elastislide-carousel ul li a img {
   display: block;
   border: 2px solid white;
-  max-width: 75%;
+  width: 100px;
+  height: 100px;
 }
 
 /* Navigation Arrows */
@@ -675,6 +676,7 @@ input[type="range"]:focus::-ms-fill-upper {
   background: #fff;
   /* border-radius: 30px; */
   /* display: block; */
+  display: none;
   position: fixed;
   z-index: 999;
   bottom: 0;

@@ -254,7 +254,7 @@
   
   <div class="menu1 menuEffects">
     <label class="mobile-label" for="menuToggle">
-      <img src="images/door-spec.png" alt="" class="img-door"/>
+      <img src="images/reject.png" alt="" class="img-door"/>
     </label>
     <div class="menuContent">
       <ul class="mobile-menuul">
@@ -571,7 +571,7 @@
                 class="tooltip"
                 data-slide-to="5"
               >
-                <img src="images/pillar.png" alt="" class="techspec-img" />
+                <img src="images/pillaricon.png" alt="" class="techspec-img" />
                 <span class="tooltiptext">Pillars</span>
               </li>
               <li
@@ -702,7 +702,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item fade-in-image concrete">
+              <div class="carousel-item fade-in-image concrete" id="con">
                 <!-- <img
                   class="d-block w-100"
                   src="/images/concrete.jpg"
@@ -769,7 +769,7 @@
                   src="/images/solar.jpg"
                   alt="Third slide"
                 /> -->
-                <div class="heat-solar row hidden">
+                <div class="heat-solar row hidden" id="solarheat">
                   <div class="col-md-5">
                     <div class="heat">
                       <h2 class="solar">SOLAR PANELS</h2>
@@ -816,7 +816,7 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item fade-in-image">
+              <div class="carousel-item fade-in-image" id="pillarss">
                 <img
                   class="d-block w-100"
                   src="images/pillars.jpg"
@@ -851,14 +851,14 @@
                   alt="Third slide"
                 /> -->
               </div>
-              <div class="carousel-item fade-in-image">
+              <div class="carousel-item fade-in-image" id="flooring">
                 <img
                   class="d-block w-100"
                   src="images/Flooring.jpg"
                   alt="Third slide"
                 />
               </div>
-              <div class="carousel-item fade-in-image">
+              <div class="carousel-item fade-in-image" id="steel">
                 <img
                   class="d-block w-100"
                   src="images/Steel.jpg"
@@ -879,7 +879,10 @@
               role="button"
               data-slide="prev"
             >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <!-- <span class="carousel-control-prev-icon" aria-hidden="true">
+                
+              </span> -->
+              <i class="fa-solid fa-chevron-left"></i>
               <span class="sr-only">Previous</span>
             </a>
             <a
@@ -888,7 +891,8 @@
               role="button"
               data-slide="next"
             >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              <i class="fa-solid fa-chevron-right"></i>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -898,7 +902,7 @@
         <div class="swiper-slide">
           <div class="row container-fluid m-0 p-0 tab-row">
             <div class="col-md-5 p-0">
-              <div class="tab">
+              <div class="tab ">
                 <div class="tabHead">
                   <h4>Plans</h4>
                 </div>
@@ -926,6 +930,34 @@
                   Car Parking plan
                 </button>
               </div>
+              <!-- <div class="tab2 buttonlist">
+                <div class="tab2Head">
+                  <h4>Plans</h4>
+                </div>
+                <button
+                  class="tab2links content1"
+                  onclick="openCity(event, 1)"
+                  id="defaultOpen"
+                >
+                  <img src="images/construction.png" alt="" class="construction" />
+                </button>
+                
+                <button class="tab1links" onclick="openCity(event, 2)">
+                  <img src="images/living-room.png" alt="" class="construction" />
+                </button>
+                <button class="tab1links" onclick="openCity(event, 3)">
+                  <img src="images/blueprint.png" alt="" class="construction" />
+                </button>
+                <button class="tab1links" onclick="openCity(event, 4)">
+                  <img src="images/track.png" alt="" class="construction" />
+                </button>
+                <button class="tab1links" onclick="openCity(event, 5)">
+                  <img src="images/gap.png" alt="" class="construction" />
+                </button>
+                <button class="tab1links" onclick="openCity(event, 6)">
+                  <img src="images/parked-car.png" alt="" class="construction" />
+                </button>
+              </div> -->
             </div>
             
           
@@ -1033,7 +1065,12 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="gallery_main">
+                <img
+                src="images/gallerymobile.jpg"
+                alt=""
+                class="gallerymobile"
+              />
+                <!-- <div class="gallery_main">
                   <img
                     src="images/home5.jpeg"
                     alt=""
@@ -1059,10 +1096,10 @@
                     alt=""
                     class="homewid"
                   />
-                </div>
+                </div> -->
               </div>
               <div class="carousel-item">
-                <div class="gallery_main">
+                <!-- <div class="gallery_main">
                   <img
                     src="images/home28.jpeg"
                     alt=""
@@ -1088,7 +1125,12 @@
                     alt=""
                     class="homewid"
                   />
-                </div>
+                </div> -->
+                <img
+                    src="images/gallerymobile.jpg"
+                    alt=""
+                    class="gallerymobile"
+                  />
               </div>
             </div>
             <a

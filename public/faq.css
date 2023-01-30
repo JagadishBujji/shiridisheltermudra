@@ -450,7 +450,7 @@ ul {
   padding: 0px;
   background: #fff;
   /* border-radius: 30px; */
-  display: block;
+  display: none;
   position: fixed;
   z-index: 999;
   bottom: 0;

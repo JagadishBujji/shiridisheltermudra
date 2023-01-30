@@ -14,8 +14,6 @@
   top: 0;
 }
 
-
-
 .navbar-collapse {
   justify-content: center;
 }
@@ -400,6 +398,7 @@
   z-index: 999;
   bottom: 0;
   width: 100%;
+  display: none;
 }
 .nav-mob {
   display: flex;
@@ -623,6 +622,11 @@ body {
   padding-top: 10%;
   color: #fff;
   text-align: justify;
+  overflow-y: scroll;
+  max-height: 800px;
+}
+.carousel-item__image::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-item__subtitle {
@@ -937,7 +941,7 @@ body {
   .navbar {
     display: none;
   }
- 
+
   .getotp {
     bottom: 292px;
   }
@@ -945,9 +949,7 @@ body {
     right: 54px;
     bottom: 219px;
   }
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
 }
-
-

@@ -391,6 +391,7 @@ body {
   z-index: 999;
   bottom: 0;
   width: 100%;
+  display: none;
 }
 .nav-mob {
   display: flex;
