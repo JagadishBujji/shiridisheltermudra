@@ -17,5 +17,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-scrollbar",
     draggable: true
   }
-  
 });
+
+console.log('swiper-js: ', swiper);

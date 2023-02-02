@@ -10,7 +10,7 @@
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
 
     <link
@@ -1160,6 +1160,9 @@
             </a>
           </div>
         </div>
+        <!-- <div class="swiper-slide bestbrand ">
+
+        </div> -->
         <div class="swiper-slide specs ">
           <h1 class="mobi-spec hidden">SPECIFICATIONS</h1>
           <div class="row container-fluid hidden">
@@ -1473,18 +1476,18 @@
     </script>
     <!-- Swiper JS -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./javascript/swiper.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./javascript/index.js"></script>
     <script src="./javascript/mail.js"></script>
     <script src="./javascript/loan-calculator.js"></script>
     <script src="./javascript/brochure.js"></script>
-    <script src="./javascript/map.js"></script>
+    <!-- <script src="./javascript/map.js"></script> -->
     <script src="./javascript/swap.js"></script>
-    <script src="./javascript/carosuel.js"></script>
+    <!-- <script src="./javascript/carosuel.js"></script> -->
     <script src="https://tympanus.net/Development/Elastislide/js/modernizr.custom.17475.js"></script>
-
+    
     <script
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
@@ -1521,7 +1524,7 @@
         document.getElementById("myModal").style.display = "none";
       }
 
-      var slideIndex = 1;
+       let slideIndex = 1;
       showSlides(slideIndex);
 
       function plusSlides(n) {
@@ -1534,9 +1537,9 @@
 
       function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
+        var slides = document.getElementsByClassName("mySlides1");
+        var dots = document.getElementsByClassName("demo1");
+        var captionText = document.getElementById("caption1");
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -1599,7 +1602,7 @@
       }
     </script>
     <script>
-      let slideIndex = 1;
+      slideIndex = 1;
       showSlides(slideIndex);
 
       // Next/previous controls
@@ -1614,9 +1617,9 @@
 
       function showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
+        let slides = document.getElementsByClassName("mySlides1");
+        let dots = document.getElementsByClassName("demo1");
+        let captionText = document.getElementById("caption1");
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -1629,6 +1632,8 @@
         for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
         }
+        // console.log('slideIndex: ', slideIndex);
+        // console.log('slides: ',slides);
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
@@ -1647,7 +1652,7 @@
         landingImg1.style.opacity = 1;
       }, 3000);
 
-      var tagSliderContainer = document.getElementById("tagSliderContainer");
+      // var tagSliderContainer = document.getElementById("tagSliderContainer");
       var navbar1 = document.getElementById("navbar");
       var mobNavbar = document.getElementById("mob-navbar");
 
@@ -1664,7 +1669,7 @@
       } else {
         mobNavbar.style.display= "none";
         navbar1.style.display= "block";
-        tagSliderContainer.style.display= "none";
+        // tagSliderContainer.style.display= "none";
       }
 
       const tagSlider = new IntersectionObserver((entries) => {
@@ -1684,6 +1689,9 @@
 
     const tagSliderContainer1 = document.querySelectorAll("#carouselExampleIndicators");
     tagSliderContainer1.forEach((el) => tagSlider.observe(el));
+    </script>
+    <script>
+
     </script>
   </body>
 </html>

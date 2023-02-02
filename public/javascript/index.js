@@ -14,8 +14,10 @@ function navbar() {
     }
   }
 
+  console.log('swiper: ', swiper);
+
   swiper.on("slideChange", function () {
-    // console.log("swiper", swiper.activeIndex);
+    console.log("swiper", swiper.activeIndex);
     // navbar.style.opacity = 1; // add this if we need to hide navbar on other pages
     if (swiper.activeIndex > 0) {
       navbar.classList.add("sticky");

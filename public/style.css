@@ -3210,6 +3210,15 @@ img {
   margin-bottom: 0px;
   color: #fff;
 }
+
+
+.bestbrand{
+  background-image: url(images/bestbrands.png);
+  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .modalflat {
   background-image: url(images/image9-pdf.png);
   background-size: 100% 100vh;
