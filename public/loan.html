@@ -238,11 +238,12 @@
         </button>
       </div>
     </div>
-    <div class="container-fluid loanbanner">
+    <div class="container-fluid loanbanner" id="loanbanner">
       <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-7 loan-mobi">
-          <h5 class="loan-heading m-0">Loan Calculator</h5>
+          <h5 class="loan-heading">Loan Calculator</h5>
+          <p class="selectbank">Select Bank</p>
           <ul id="carousel" class="elastislide-list">
             <li onclick="fun(0)">
               <a href="#"><img src="images/hdfc.png" alt="image01" /></a>
@@ -330,7 +331,7 @@
               <p class="tenure">
                 Tenure:
                 <span id="loanPeriodText" style="color: #0b1c4c">12</span
-                ><span style="color: #0b1c4c">Years</span>
+                ><span id="loanyears" style="color: #0b1c4c">Years</span>
               </p>
               <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
             </div>

@@ -283,7 +283,7 @@ input[type="range"]:focus::-ms-fill-upper {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .tenureRange {
   width: 58% !important;
@@ -506,7 +506,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .elastislide-horizontal {
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 
 .elastislide-vertical {
@@ -517,6 +517,7 @@ input[type="range"]:focus::-ms-fill-upper {
   overflow: hidden;
   position: relative;
   height: 115px;
+  padding: 10px;
 }
 
 .elastislide-carousel ul {
@@ -535,6 +536,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .elastislide-horizontal ul {
   white-space: nowrap;
+  margin-top: 10px;
 }
 
 .elastislide-carousel ul li {
@@ -560,8 +562,8 @@ input[type="range"]:focus::-ms-fill-upper {
 .elastislide-carousel ul li a img {
   display: block;
   border: 2px solid white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 /* .elastislide-carousel ul li a:active {
 background: #000;
@@ -574,12 +576,10 @@ transform: scale(1.2);
 .elastislide-carousel ul li a:focus {
   /* border: 1px solid #000; */
   transform: scale(1.1);
-  box-shadow: 0px 0px 10px 1px #ccc;
+  box-shadow: 0px 0px 10px 1px #1e8800;
 }
-/* .elastislide-carousel ul li a:focus-visible {
-background: #000;
-transform: scale(1.2);
-} */
+
+
 
 /* Navigation Arrows */
 
@@ -662,7 +662,7 @@ transform: scale(1.2);
 }
 
 .loan-mobi {
-  padding-top: 60px;
+  padding-top: 50px;
   padding-right: 100px;
   padding-left: 70px;
 }
@@ -904,9 +904,15 @@ transform: scale(1.2);
   height: 40px;
 }
 
+.selectbank{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 450px) {
   .loanbanner {
-    background: #fff;
+    background: url(images/loanmobile.png);
+    background-size: 100% 100vh;
   }
   .sidenav {
     padding-top: 15px;
@@ -920,7 +926,7 @@ transform: scale(1.2);
     padding-left: 10px;
   }
   .elastislide-horizontal {
-    padding: 0;
+    padding: 25px 0px;
     box-shadow: none;
     margin-top: 20px;
   }
@@ -961,11 +967,11 @@ transform: scale(1.2);
     display: none;
   }
   .elastislide-carousel ul li a img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .elastislide-carousel {
-    height: 70px;
+    height: 90px;
   }
   .elastislide-horizontal ul li {
     margin-right: 20px;
@@ -973,4 +979,29 @@ transform: scale(1.2);
   .mobnavbar{
     display: block;
   }
+  #downPaymentText{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #loanAmountText{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #interestRateText{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #loanPeriodText{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #loanyears{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  #emi{
+    font-size: 24px;
+    margin-left: 5px;
+  }
+
 }
