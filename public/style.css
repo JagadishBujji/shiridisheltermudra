@@ -3223,7 +3223,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .brandsbest {
@@ -3273,6 +3273,7 @@ img {
 .banks-project{
   color: #C79930;
   font-size: 20px;
+  margin-top: 20px;
 }
 
 .banksss{
@@ -4736,7 +4737,7 @@ img {
     display: none;
   }
   .brandsbest {
-    margin-top: 0;
+    margin-top: 50px;
   }
   .ele{
     font-size: 14px;
@@ -4745,14 +4746,14 @@ img {
     font-size: 16px;
   }
   .han{
-    width: 40px;
+    width: 60px;
     /* height: 10px; */
   }
   .banks-project{
     font-size: 14px;
   }
   .brands-company{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   .banksss{
     width: 80px;
