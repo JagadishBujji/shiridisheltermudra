@@ -1,0 +1,47 @@
+[debug] [2023-02-02T11:07:37.524Z] ----------------------------------------------------------------------
+[debug] [2023-02-02T11:07:37.525Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-02T11:07:37.526Z] CLI Version:   11.21.0
+[debug] [2023-02-02T11:07:37.526Z] Platform:      win32
+[debug] [2023-02-02T11:07:37.526Z] Node Version:  v18.12.1
+[debug] [2023-02-02T11:07:37.527Z] Time:          Thu Feb 02 2023 16:37:37 GMT+0530 (India Standard Time)
+[debug] [2023-02-02T11:07:37.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-02T11:07:37.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-02T11:07:37.594Z] > authorizing via signed-in user (jagadish00198@gmail.com)
+[debug] [2023-02-02T11:07:37.594Z] [iam] checking project shiridi-shelters-mudra for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-02T11:07:37.596Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridi-shelters-mudra:testIamPermissions [none]
+[debug] [2023-02-02T11:07:37.596Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridi-shelters-mudra:testIamPermissions x-goog-quota-user=projects/shiridi-shelters-mudra
+[debug] [2023-02-02T11:07:37.596Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridi-shelters-mudra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-02T11:07:39.333Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridi-shelters-mudra:testIamPermissions 200
+[debug] [2023-02-02T11:07:39.333Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/shiridi-shelters-mudra:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-02T11:07:39.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shiridi-shelters-mudra [none]
+[debug] [2023-02-02T11:07:39.994Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shiridi-shelters-mudra 200
+[debug] [2023-02-02T11:07:39.994Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shiridi-shelters-mudra {"projectId":"shiridi-shelters-mudra","projectNumber":"483220404071","displayName":"shiridi-shelters-mudra","name":"projects/shiridi-shelters-mudra","resources":{"hostingSite":"shiridi-shelters-mudra"},"state":"ACTIVE","etag":"1_95b4e8da-7a91-484f-8e30-1589d5e4ca3a"}
+[info] 
+[info] === Deploying to 'shiridi-shelters-mudra'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-02-02T11:07:40.002Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/shiridi-shelters-mudra/versions [none]
+[debug] [2023-02-02T11:07:40.002Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/shiridi-shelters-mudra/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-02-02T11:07:41.421Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/shiridi-shelters-mudra/versions 200
+[debug] [2023-02-02T11:07:41.421Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/shiridi-shelters-mudra/versions {"name":"projects/483220404071/sites/shiridi-shelters-mudra/versions/db1a4cd17ce22fd9","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[shiridi-shelters-mudra]: beginning deploy... 
+[debug] [2023-02-02T11:07:41.526Z] Error: EPERM: operation not permitted, scandir 'D:/kittivaasal/kittivaasal_projects/shiridisheltermudra/public/firebase-debug.log'
+    at Object.readdirSync (node:fs:1451:3)
+    at GlobSync._readdir (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:285:46)
+    at GlobSync._readdirInGlobStar (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:242:17)
+    at GlobSync._readdir (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:273:17)
+    at GlobSync._processReaddir (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:134:22)
+    at GlobSync._process (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:129:10)
+    at GlobSync._processGlobStar (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:377:10)
+    at GlobSync._process (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:127:10)
+    at new GlobSync (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:45:10)
+    at globSync (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:23:10)
+    at listFiles (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:28)
+    at runDeploys (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:44:49)
+    at deploy (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:89:12)
+    at chain (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:35:15)
+    at deploy (C:\Users\jagad\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:80:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.

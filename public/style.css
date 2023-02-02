@@ -3211,12 +3211,73 @@ img {
   color: #fff;
 }
 
-
-.bestbrand{
+.bestbrand {
   background-image: url(images/bestbrands.png);
   background-size: 100% 100vh;
   background-position: center;
   background-repeat: no-repeat;
+  display: block;
+}
+
+.brands-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.brandsbest {
+  margin-top: 60px;
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Italic";
+  src: url("Fonts/HelveticaNeue-Italic.otf");
+}
+
+
+
+.bestcompany {
+  margin: 0;
+  color: #90693d;
+  font-size: 30px;
+  font-family: "CormorantSC-Regular";
+  font-weight: 600;
+}
+
+.brands-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ele {
+  margin: 0;
+  font-size: 20px;
+  font-family: "HelveticaNeue-Italic";
+  color: #90693d;
+}
+
+.han{
+  width: 60px;
+  margin-left: 5px;
+  /* height: 50px; */
+}
+
+.banks-project{
+  color: #C79930;
+  font-size: 20px;
+}
+
+.banksss{
+  width: 100%;
+  /* height: 50px; */
 }
 
 .modalflat {
@@ -4673,6 +4734,28 @@ img {
   }
   .gallery_main {
     display: none;
+  }
+  .brandsbest {
+    margin-top: 0;
+  }
+  .ele{
+    font-size: 14px;
+  }
+  .bestcompany{
+    font-size: 16px;
+  }
+  .han{
+    width: 40px;
+    /* height: 10px; */
+  }
+  .banks-project{
+    font-size: 14px;
+  }
+  .brands-company{
+    margin-bottom: 5px;
+  }
+  .banksss{
+    width: 80px;
   }
 }
 
